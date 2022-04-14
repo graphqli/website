@@ -1,0 +1,49 @@
+---
+sidebar_label: Golang
+title: GraphQL Getting Started Using on a Golang Project
+---
+import ApiSecretNote from "./shared/api-secret-note.mdx"
+
+## Installation
+Make sure you have a working Go environment. To install graphql, simply run:
+
+```
+$ go get github.com/machinebox/graphql
+```
+
+## Usage
+
+<ApiSecretNote />
+
+```go
+import "context"
+
+// create a client (safe to share across requests)
+client := graphql.NewClient("https://api.apito.io/secured/graphql")
+
+// make a request
+req := graphql.NewRequest(`
+    query ($key: String!) {
+        items (id:$key) {
+            field1
+            field2
+            field3
+        }
+    }
+`)
+
+// set any variables
+req.Var("key", "value")
+
+// set header fields
+req.Header.Set("Authorization", "Bearer API_SECRET")
+
+// define a Context for the request
+ctx := context.Background()
+
+// run it and capture the response
+var respData ResponseStruct
+if err := client.Run(ctx, req, &respData); err != nil {
+    log.Fatal(err)
+}
+```

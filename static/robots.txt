@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://graphqli.com
+
+# Sitemaps
+Sitemap: https://graphqli.com/sitemap.xml

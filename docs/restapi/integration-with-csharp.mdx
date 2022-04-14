@@ -1,0 +1,17 @@
+---
+sidebar_label: C#
+title: Apito REST API Integration with C# Project
+---
+import ApiSecretNote from "./shared/api-secret-note.mdx"
+
+## Using `RestClient`
+
+<ApiSecretNote />
+
+```java
+var client = new RestClient("https://api.apito.io/secured/rest/project-id");
+var request = new RestRequest(Method.GET);
+request.AddHeader("content-type", "application/json");
+request.AddHeader("authorization", "Bearer API_SECRETS");
+IRestResponse response = client.Execute(request);
+```

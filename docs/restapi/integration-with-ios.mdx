@@ -1,0 +1,34 @@
+---
+sidebar_label: iOS
+title: Apito REST API Integration with iOS
+---
+import ApiSecretNote from "./shared/api-secret-note.mdx"
+
+<ApiSecretNote />
+
+```swift
+import Foundation
+
+let headers = [
+  "content-type": "application/json",
+  "authorization": "Bearer API_SECRET"
+]
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.apito.io/secured/rest/project-id")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+request.httpMethod = "GET"
+request.allHTTPHeaderFields = headers
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+  if (error != nil) {
+    print(error)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```

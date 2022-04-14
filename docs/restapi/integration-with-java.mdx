@@ -1,0 +1,19 @@
+---
+sidebar_label: Java
+title: Apito REST API Integration with Java
+---
+import ApiSecretNote from "./shared/api-secret-note.mdx"
+
+##  Using `Unirest` Library
+
+Use the lib called `Unirest` for Java.
+
+<ApiSecretNote />
+
+
+```java title="client.java"
+HttpResponse<String> response = Unirest.get("https://api.apito.io/secured/rest/project-id")
+  .header("content-type", "application/json")
+  .header("authorization", "Bearer API_SECRET")
+  .asString();
+```

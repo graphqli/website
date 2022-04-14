@@ -1,0 +1,38 @@
+---
+sidebar_label: Golang
+title: Apito REST API Integration with Golang
+---
+import ApiSecretNote from "./shared/api-secret-note.mdx"
+
+## Using `net/http` library
+
+<ApiSecretNote />
+
+```
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"io/ioutil"
+)
+
+func main() {
+
+	url := "https://myapi.com/api"
+
+	req, _ := http.NewRequest("GET", url, nil)
+
+	req.Header.Add("content-type", "application/json")
+	req.Header.Add("authorization", "Bearer API_SECRET")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := ioutil.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
