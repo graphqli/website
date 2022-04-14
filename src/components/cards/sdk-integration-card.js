@@ -1,11 +1,13 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { Heading, jsx, Text } from "theme-ui";
+import { Heading, Image, jsx, Text } from "theme-ui";
 
 const SdkIntegrationCard = ({ data }) => {
+  console.log(data.logo);
   return (
     <div sx={styles.card}>
       <div sx={styles.content}>
+        <img src={data.logo?.src} sx={styles.img} variant="avatar" />
         <Heading as="h3">{data?.title}</Heading>
         <Text as="p">{data?.description}</Text>
       </div>
@@ -23,15 +25,19 @@ const styles = {
   card: {
     boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.15)",
     borderRadius: 10,
+    display: "flex",
+    flexDirection: "column",
   },
   content: {
     padding: "40px",
+    flexGrow: 1,
     h3: {
       color: "heading",
       fontWeight: 700,
       fontSize: [18, null, null, 22],
       lineHeight: 1.32,
       textAlign: "center",
+      marginBottom: 20,
     },
     p: {
       fontSize: [16, null, null, 18],
@@ -52,5 +58,10 @@ const styles = {
       textTransform: "uppercase",
       letterSpacing: "2px",
     },
+  },
+  img: {
+    height: 90,
+    display: "block",
+    margin: "0 auto 20px",
   },
 };

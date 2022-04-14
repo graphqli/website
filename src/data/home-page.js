@@ -1,3 +1,13 @@
+import anguler from "../icons/png/logo_angular.png";
+import gatsby from "../icons/png/logo_gatsby.png";
+import hugo from "../icons/png/logo_hugo.png";
+import nextjs from "../icons/png/logo_nextjs.png";
+import nuxt from "../icons/png/logo_nuxt.png";
+import reactjs from "../icons/png/logo_react.png";
+import sapper from "../icons/png/logo_sapper.png";
+import svelte from "../icons/png/logo_svelte.png";
+import vue from "../icons/png/logo_vue.png";
+
 export const HomePageData = {
   seo: {
     title: "API Driven Headless CMS for your Content",
@@ -413,8 +423,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
       {
         id: 1,
         data: {
-          logo_link:
-            "https://3.bp.blogspot.com/-hQ7xvqYQFoI/XJUj05A4PbI/AAAAAAAAJU8/v-nO7RjtOHgd66_IG3n339kXRbYWmmQmQCK4BGAYYCw/s1600/logo%2Bgatsby%2Bicon.png",
+          logo: gatsby,
           title: "Gatsby",
           description:
             "Gatsby is a blazing fast modern site generator for React.",
@@ -423,21 +432,73 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
       {
         id: 2,
         data: {
-          logo_link:
-            "https://3.bp.blogspot.com/-hQ7xvqYQFoI/XJUj05A4PbI/AAAAAAAAJU8/v-nO7RjtOHgd66_IG3n339kXRbYWmmQmQCK4BGAYYCw/s1600/logo%2Bgatsby%2Bicon.png",
-          title: "Gatsby",
+          logo: vue,
+          title: "Vue",
           description:
-            "Gatsby is a blazing fast modern site generator for React.",
+            "Vue.js is an open-source Model-view-viewmodel Javascript framework for using user...",
         },
       },
       {
-        id: 1,
+        id: 3,
         data: {
-          logo_link:
-            "https://3.bp.blogspot.com/-hQ7xvqYQFoI/XJUj05A4PbI/AAAAAAAAJU8/v-nO7RjtOHgd66_IG3n339kXRbYWmmQmQCK4BGAYYCw/s1600/logo%2Bgatsby%2Bicon.png",
-          title: "Gatsby",
+          logo: nuxt,
+          title: "Nuxt.js",
           description:
-            "Gatsby is a blazing fast modern site generator for React.",
+            "Nuxt.js is a free and open-source web appication framework based on Vue.js, Node.js, Webpack, and...",
+        },
+      },
+      {
+        id: 4,
+        data: {
+          logo: nextjs,
+          title: "Next.js",
+          description:
+            "Next.js is a minimalistic framework for server-rendered React applications as well as statically...",
+        },
+      },
+      {
+        id: 5,
+        data: {
+          logo: reactjs,
+          title: "React",
+          description:
+            "React is a javascript library for building user interfaces. It is maintained by Facebook and a...",
+        },
+      },
+      {
+        id: 6,
+        data: {
+          logo: anguler,
+          title: "Anguler",
+          description:
+            "Anguler is a plartform for building mobile and desktop web applications.",
+        },
+      },
+      {
+        id: 7,
+        data: {
+          logo: svelte,
+          title: "Svelte",
+          description:
+            "Svelte is a radical new approach to building user interfaces as it writes code that surgically...",
+        },
+      },
+      {
+        id: 8,
+        data: {
+          logo: sapper,
+          title: "Sapper",
+          description:
+            "Sapper is a framework for building web applications of all sizes, with a beautiful development experience...",
+        },
+      },
+      {
+        id: 9,
+        data: {
+          logo: hugo,
+          title: "Hugo",
+          description:
+            "Hugo is one of the most popular open-source static site generators. With its amazing...",
         },
       },
     ],
