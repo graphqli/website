@@ -13,12 +13,12 @@ const methodColor = (method) => {
   }
 };
 
-const CodeBlock = ({ icon, title, code, method, language }) => {
+const CodeBlock = ({ icon, title, description, code, method, language }) => {
   return (
     <div sx={styles.codeBlock}>
       <Flex as="header" sx={styles.codeHeader}>
         {icon && icon}
-        <span className="lang-name">{title}</span>
+        <span className="lang-name">{title} [ {description} ]</span>
         {method && (
           <span
             className="method"

@@ -135,6 +135,7 @@ export const HomePageData = {
       {
         id: 1,
         title: "Simple",
+        description: 'Website Homepage',
         codes: {
           rest: `curl https://api.apito.io/secured/rest/products?name:contains=”pro”`,
           graphql: `query HomePage {

@@ -31,6 +31,7 @@ const ExampleQueries = ({ data }) => {
                   code={item.codes.graphql}
                   method="post"
                   language="graphql"
+                  description={item.description}
                 />
                 {/* <CodeBlock
                   icon={<RESTIcon />}
