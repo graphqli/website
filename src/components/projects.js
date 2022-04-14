@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Container, Grid } from 'theme-ui';
+import { jsx, Container, Grid } from "theme-ui";
 import SectionHeading from "./section-heading";
 import ProjectCard from "./cards/project-card";
 
@@ -30,8 +30,8 @@ const styles = {
     pb: [40, null, null, null, 60],
   },
   grid: {
-    gridGap: '40px',
-    justifyContent: [null, null, 'center', 'unset'],
-    gridTemplateColumns: ['repeat(1, 1fr)', null, 400, 'repeat(4, 1fr)'],
+    gridGap: "40px",
+    justifyContent: [null, null, "center", "unset"],
+    gridTemplateColumns: ["repeat(1, 1fr)", null, 400, "repeat(3, 1fr)"],
   },
 };
