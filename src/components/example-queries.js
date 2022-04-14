@@ -61,7 +61,7 @@ const styles = {
     gap: [null, null, null, 35],
     gridTemplateColumns: ["1fr", null, null, "1fr 550px", "29% 68%"],
     overflow: ["hidden", null, null, "auto"],
-    alignItems: "center",
+    alignItems: "flex-start",
     ".react-tabs__tab-panel": {
       display: "grid",
       gap: 12,
@@ -74,7 +74,6 @@ const styles = {
       display: ["flex", null, null, "grid"],
       overflowX: ["scroll", null, null, "unset"],
       width: ["100%", null, null, "unset"],
-      alignSelf: "start",
     },
     ".react-tabs__tab": {
       border: "1px solid #DADADA",

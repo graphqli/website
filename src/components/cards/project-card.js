@@ -7,12 +7,12 @@ const ProjectCard = ({ data }) => {
   return (
     <div sx={styles.card}>
       <Flex as="figure">
-        {/* <Image
+        <Image
           height={200}
           src={data.data.cover.url}
           alt={data.data.title}
           title={data.data.title}
-        /> */}
+        />
       </Flex>
       <div sx={styles.content}>
         <Heading as="h3">{data.data.title}</Heading>
