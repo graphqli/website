@@ -5,6 +5,8 @@ import {HomePageData} from "../data/home-page";
 import StickyHeader from "../components/header/sticky-header";
 import Footer from "../components/footer/footer";
 import PricingPage from "../components/pricing";
+import {PricingData1} from "../data/pricing1";
+import {PricingData2} from "../data/pricing2";
 import Communications from "../components/support";
 import SDKintegration from "../components/sdk-integration";
 import {ThemeProvider} from "theme-ui";
@@ -18,7 +20,8 @@ function Pricing() {
             <Fragment>
                 <Seo data={HomePageData.seo}/>
                 <StickyHeader/>
-                <PricingPage/>
+                <PricingPage data={PricingData1}/>
+                <PricingPage data={PricingData2}/>
                 <SDKintegration data={HomePageData.sdk}/>
                 <Communications data={HomePageData.communications}/>
                 <Footer/>

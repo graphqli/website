@@ -2,11 +2,10 @@
 /** @jsx jsx */
 import { jsx, Container, Grid, Flex, Button } from 'theme-ui';
 import { useState } from 'react';
-import {pricing} from "../data/pricing";
 import SectionHeading from "./section-heading";
 import PriceTable from "./cards/price-table";
 
-const PricingPage = () => {
+const PricingPage = ({data}) => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   const handlePlan = (plan) => {
@@ -17,8 +16,8 @@ const PricingPage = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Pricing Plan"
-          title="Flexible Pay Per Project Plan"
+          slogan={data?.slogan}
+          title={data?.title}
           as={'h1'}
         />
         <Flex sx={styles.priceSwitcher}>
@@ -38,7 +37,7 @@ const PricingPage = () => {
           </Button>
         </Flex>
         <Grid sx={styles.grid}>
-          {pricing.map((item) => (
+          {data?.plans.map((item) => (
             <PriceTable key={item.id} id={item.id} data={item} isMonthly={isMonthly} />
           ))}
         </Grid>
@@ -55,7 +54,7 @@ const styles = {
     pb: [60, null, null, null, 60],
   },
   heading: {
-    maxWidth: 545,
+    maxWidth: 845,
     mx: 'auto',
     textAlign: 'center',
     h2: {
@@ -86,7 +85,7 @@ const styles = {
   },
   grid: {
     gridGap: [20, null, null, 20],
-    gridTemplateColumns: ['repeat(1, 1fr)', null, 'repeat(4, 1fr)'],
+    gridTemplateColumns: ['repeat(1, 1fr)', null, 'repeat(3, 1fr)'],
     maxWidth: 1360,
     margin: '0 auto',
   },
