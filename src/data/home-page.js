@@ -134,11 +134,11 @@ export const HomePageData = {
     data: [
       {
         id: 1,
-        title: "Simple",
-        description: 'Website Homepage',
+        title: "Content Get",
+        description: 'Get Website Homepage Data',
         codes: {
           rest: `curl https://api.apito.io/secured/rest/products?name:contains=”pro”`,
-          graphql: `query HomePage {
+          graphql: `query GetHomePage {
   homepage {
     id
     data {
@@ -165,9 +165,6 @@ export const HomePageData = {
         description {
           markdown
         }
-        icon {
-          url
-        }
       }
     }
   }
@@ -177,10 +174,19 @@ export const HomePageData = {
       {
         id: 2,
         title: "Filtering and Sorting",
+        description: "Filtering Product by Ratting and Sorting by Price",
         codes: {
           rest: `curl https://api.apito.io/secured/rest/ecom/products?rating:gte=4&sort=-price`,
           graphql: `query FilterProductByPriceAndRating {
-  products(sort: { price: DESC }, where: { rating: { gte: 4 }}) {
+  products(
+    sort: { 
+      price: DESC 
+    }, 
+    where: { 
+      rating: { 
+        gte: 4 
+      }
+    }) {
     data {
       price
       name
@@ -188,26 +194,16 @@ export const HomePageData = {
         markdown
       }
       rating
-    }
-  }
-}`,
-        },
-      },
-      {
-        id: 3,
-        title: "Complex Nested Filtering",
-        codes: {
-          rest: `curl https://api.apito.io/secured/rest/ecom/products?price:lt=100
-curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
-          graphql: `query NestedPricedProductSearchByCategory {
-  categories(
-    where: { name: { contains: "shirt" }}) {
-    products(
-      where: {price: { lt: 100 }}) {
-      data {
-        rating
-        price
-        name
+      gallery {
+        _id
+        url
+      }
+      specifications {
+        title
+        link
+        description {
+          markdown
+        }
       }
     }
   }
@@ -215,6 +211,44 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         },
       },
       {
+        id: 3,
+        title: "Complex Filtering",
+        description: "Searching for Shirts with prices greater than 100",
+        codes: {
+          rest: `curl https://api.apito.io/secured/rest/ecom/products?price:lt=100
+curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
+          graphql: `query NestedPricedProductSearchByCategory {
+  categories(
+    where: { 
+      name: { 
+        contains: "shirt" 
+      }
+    }) {
+    products(
+      where: { 
+        price: { 
+          lt: 100 
+        }
+      }
+    ) {
+      data {
+        price
+        name
+        description {
+          markdown
+        }
+        rating
+        gallery {
+          _id
+          url
+        }
+      }
+    }
+  }
+}`,
+        },
+      },
+/*      {
         id: 4,
         title: "Geo Location Search",
         codes: {
@@ -235,25 +269,40 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
   }
 }`,
         },
-      },
+      },*/
       {
-        id: 5,
-        title: "Records with Pagination",
+        id: 4,
+        title: "Pagination",
+        description: "Fetch 10 User Records of the Second Page",
         codes: {
           rest: `curl https://api.apito.io/secured/rest/ecom/user?limit=10&page=2`,
           graphql: `query GetUsersWithPagination {
-  users(limit: 10, page: 2) {
+  users(
+    limit: 10, 
+    page: 2
+  ) {
     id
     data {
       first_name
       phone
       email
+      dob
+      gender
+      avatar {
+        url
+      }
+      hobbies {
+        title
+        description {
+          markdown
+        }
+      }
     }
   }
 }`,
         },
       },
-      {
+/*      {
         id: 6,
         title: "Project User Login",
         restMethod: "post",
@@ -268,8 +317,8 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
   }
 }`,
         },
-      },
-      {
+      },*/
+/*      {
         id: 7,
         title: "User Registration",
         restMethod: "post",
@@ -285,8 +334,8 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
   }
 }`,
         },
-      },
-      {
+      },*/
+/*      {
         id: 8,
         title: "Custom Function Calling",
         restMethod: "post",
@@ -303,6 +352,138 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           price
         }
         ...
+      }
+    }
+  }
+}`,
+        },
+      },*/
+      {
+        id: 5,
+        title: "Insert Content",
+        restMethod: "post",
+        description: "Create a Portfolio",
+        codes: {
+          rest: `curl -X POST "https://api.apito.io/secured/rest/ecom/system/function/processOrders"
+-H  "accept: application/json" -H  "Content-Type: application/json" 
+-d "{\\"status\\":\\"string\\"}"`,
+          graphql: `mutation InsertPortfolio {
+  createPortfolio(
+    payload: {
+      name: "John Doe",
+      dob: "1994-02-24"
+      active: true,
+      address_home : "24/78 Baker Street, London"
+    }
+  ) {
+    data {
+      id
+      name
+      dob
+      avatar {
+        url
+      }
+      status
+      address {
+        home
+        office
+      }
+    }
+  }
+}`,
+        },
+      },
+      {
+        id: 6,
+        title: "Update Content",
+        restMethod: "post",
+        description: "Update Home Address of a Portfolio",
+        codes: {
+          rest: `curl -X POST "https://api.apito.io/secured/rest/ecom/system/function/processOrders"
+-H  "accept: application/json" -H  "Content-Type: application/json" 
+-d "{\\"status\\":\\"string\\"}"`,
+          graphql: `mutation InsertPortfolio {
+  createPortfolio(
+    _id : "9c872118-7c86-4e0e-833b-f2c517502adb",
+    payload: {
+      address_home : "24/78 Baker Street, London"
+    }
+  ) {
+    data {
+      id
+      name
+      dob
+      avatar {
+        url
+      }
+      status
+      address {
+        home
+        office
+      }
+    }
+  }
+}`,
+        },
+      },
+      {
+        id: 6,
+        title: "Publish Draft Content",
+        restMethod: "post",
+        description: "Update status of a content from draft to publish",
+        codes: {
+          rest: `curl -X POST "https://api.apito.io/secured/rest/ecom/system/function/processOrders"
+-H  "accept: application/json" -H  "Content-Type: application/json" 
+-d "{\\"status\\":\\"string\\"}"`,
+          graphql: `mutation InsertPortfolio {
+  createPortfolio(
+    _id : "9c872118-7c86-4e0e-833b-f2c517502adb",
+    payload: {
+      address_home : "24/78 Baker Street, London"
+    },
+	status : PUBLISHED,
+  ) {
+    data {
+      id
+      name
+      dob
+      avatar {
+        url
+      }
+      status
+      address {
+        home
+        office
+      }
+    }
+  }
+}`,
+        },
+      },
+      {
+        id: 7,
+        title: "Delete Content",
+        description: "Deletes a testimonial",
+        restMethod: "post",
+        codes: {
+          rest: `curl -X POST "https://api.apito.io/secured/rest/ecom/system/function/processOrders"
+-H  "accept: application/json" -H  "Content-Type: application/json" 
+-d "{\\"status\\":\\"string\\"}"`,
+          graphql: `mutation DeletePortfolio {
+  deletePortfolio(
+    _id : "9c872118-7c86-4e0e-833b-f2c517502adb"
+  ) {
+    data {
+      id
+      name
+      dob
+      avatar {
+        url
+      }
+      status
+      address {
+        home
+        office
       }
     }
   }

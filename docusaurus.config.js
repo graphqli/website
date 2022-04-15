@@ -51,9 +51,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Apito Docs',
+        title: 'Graphqli Docs',
         logo: {
-          alt: 'Apito Logo',
+          alt: 'Graphqli Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -71,17 +71,17 @@ const config = {
           },
           {to: 'blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://apito.io',
+            href: 'https://graphqli.com',
             label: 'Website',
             position: 'right',
           },
           {
-            href: 'https://app.apito.io',
-            label: 'Apito Console',
+            href: 'https://app.graphqli.com',
+            label: 'Graphqli Console',
             position: 'right',
           },
           {
-            href: 'https://github.com/sh0umik/apito-doc',
+            href: 'https://github.com/graphqli/website',
             label: 'GitHub',
             position: 'right',
           },
@@ -104,7 +104,7 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/apito',
+                href: 'https://stackoverflow.com/questions/tagged/graphqli',
               },
               {
                 label: 'Discord',
@@ -112,7 +112,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/apito_io',
+                href: 'https://twitter.com/graphqli',
               },
             ],
           },
@@ -125,12 +125,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/apito-io',
+                href: 'https://github.com/graphqli',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Graphqli. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

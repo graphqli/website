@@ -33,7 +33,14 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Apito Console',
+      label: 'Framework Integration',
+      items: [
+          'frameworks/gatsby-cms-with-graphql'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Graphqli Console',
       items: [
         'console/how-to-design-database-for-your-project',
         'console/usages-of-swagger-and-graphql-explorer',
@@ -46,7 +53,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Modeling Your Project',
+      label: 'Project Modeling',
       items: [
         'model/database-design',
         'model/choice-between-models'
@@ -54,15 +61,22 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Authentication',
+      label: 'Add-Ons',
       items: [
-        'auth/auth-support-in-api',
-        'auth/create-user',
-        'auth/user-login',
-        'auth/using-login-token'
+        {
+          type: 'category',
+          label: 'Authentication',
+          items: [
+            'addons/auth/auth-support-in-api',
+            'addons/auth/create-user',
+            'addons/auth/user-login',
+            'addons/auth/using-login-token'
+          ],
+        },
       ],
     },
-    {
+
+/*    {
       type: 'category',
       label: 'Writing Logic',
       items: [
@@ -73,15 +87,15 @@ const sidebars = {
         'logic/connecting-function',
         'logic/calling-function'
       ],
-    },
+    },*/
     {
       type: 'category',
-      label: 'Third Party Integration',
+      label: 'Webhooks',
       items: [
-        'third-party/prerequisite',
+        'webhooks/create-webhooks',
       ],
     },
-    {
+/*    {
       type: 'category',
       label: 'Building Apps',
       items: [
@@ -100,7 +114,7 @@ const sidebars = {
           ],
         },
       ],
-    },
+    },*/
     {
       type: 'category',
       label: 'API Integration',
@@ -141,7 +155,7 @@ const sidebars = {
         },
       ],
     },
-    {
+   /* {
       type: 'category',
       label: 'Configuring Cloud Providers',
       items: [
@@ -153,7 +167,7 @@ const sidebars = {
           ],
         }
       ],
-    }
+    }*/
   ],
 };
 

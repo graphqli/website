@@ -32,7 +32,7 @@ const CodeBlock = ({ icon, title, description, code, method, language }) => {
         language={language}
         style={a11yDark}
         showLineNumbers
-        useInlineStyles={false}
+        //useInlineStyles={false}
         wrapLines={true}
       >
         {code}

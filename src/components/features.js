@@ -70,7 +70,8 @@ const styles = {
     gridTemplateColumns: 'repeat(2,1fr)',
   },
   heading: {
-    textAlign: ['center', null, null, 'left'],
+    alignSelf: 'center',
+    textAlign: ['center', null, null, 'center'],
     px: [20, null, null, 0],
     '.slogan': {
       fontSize: 14,

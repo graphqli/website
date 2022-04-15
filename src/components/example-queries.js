@@ -25,6 +25,13 @@ const ExampleQueries = ({ data }) => {
           <div>
             {data?.data.map((item) => (
               <TabPanel key={item.id}>
+{/*                <CodeBlock
+                    icon={<RESTIcon />}
+                    title="REST API"
+                    code={item.codes.rest}
+                    method={item.restMethod ? item.restMethod : "get"}
+                    language="shell"
+                />*/}
                 <CodeBlock
                   icon={<GraphqlIcon />}
                   title="GraphQL"
@@ -33,13 +40,7 @@ const ExampleQueries = ({ data }) => {
                   language="graphql"
                   description={item.description}
                 />
-                {/* <CodeBlock
-                  icon={<RESTIcon />}
-                  title="REST API"
-                  code={item.codes.rest}
-                  method={item.restMethod ? item.restMethod : "get"}
-                  language="shell"
-                />*/}
+
               </TabPanel>
             ))}
           </div>

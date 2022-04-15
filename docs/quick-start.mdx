@@ -1,25 +1,27 @@
 ---
 id: build-api-quick-start-guide
-title: How to build API | Quick Start Guide
+title: How to build Graphql API
 sidebar_label: Build API
 ---
 
-Apito is a Cloud based Backend-as-a-Service which helps you build API easily. You can think of it as a firebase alternative.
-This guide will show you how you can use Apito to build API for your next project or application.
+import data from "./static/data/config.json"
+
+<span>{data.app}</span> is a Cloud based Backend-as-a-Service which helps you build API easily. You can think of it as a firebase alternative.
+This guide will show you how you can use <span>{data.app}</span> to build API for your next project or application.
 
 ![Apito Console](https://cdn.apito.io/media/apito_documentation/2K07YCORYV_Apito_Console.png)
 
-Once you logged in to `Apito Console` you will a Project Space like above. You can use this space to switch between your projects or create a new one.
+Once you logged in to `Graphqli Console` you will a Project Space like above. You can use this space to switch between your projects or create a new one.
 
 Now, for this quick started guide I will be creating an API for an ecommerce project, so lets gets started.
 
 ## 1. Create your project
 
 Click on the Start a new Project button to initialize your project creation. Enter your project name and description and click Continue. On the next page select
-Apito Cloud option to create your project faster. Other Database options will soon be available. Congratulation! you project is being build. Once it’s done you can click
+<span>{data.app}</span> Cloud option to create your project faster. Other Database options will soon be available. Congratulation! you project is being build. Once it’s done you can click
 Explore new project to switch to your newly created project and start building your API instantly.
 
-![Apito Create a Project](https://cdn.apito.io/media/apito_documentation/NW09WSY56N_Create_Project.png)
+![Graphqli Create a Project](https://cdn.apito.io/media/apito_documentation/NW09WSY56N_Create_Project.png)
 
 The first step after creating your project is to define your project models. The most important part of designing an API is Database Modeling.
 Let’s start by creating our first model. We all know Products and categories are a crucial part of an ecommerce API.
@@ -38,7 +40,7 @@ Next, we will add few fields to our newly created product model.
 To add fields to a model click on the Add a Field button. First, we will add a title field of
 type text and we will set the attribute of the title to required. Then, a description field of type, Rich Text. An Image field of type, Media. A Price field of type, Number.
 And last but not least a Rating field of type, Number. Now let’s create another model named Category and add few fields in it. Those fields will be name,
-label and icons. Apito model & field builder is very versatile you can use it to design complex and nested model structure.
+label and icons. <span>{data.app}</span>  model & field builder is very versatile you can use it to design complex and nested model structure.
 
 ### Relations
 
@@ -47,7 +49,7 @@ Add Field Button and then select Relations. Your relation creation between model
 
 ![Database Relations](https://cdn.apito.io/media/apito_documentation/G7NHVB7U6I_Add_Fields.png)
 
-For now, let’s say, Product has many categories and categories has many products. Wow, as you can see, how easy it is to create entity relations between models in apito.
+For now, let’s say, Product has many categories and categories has many products. Wow, as you can see, how easy it is to create entity relations between models in <span>{data.app}</span> .
 Also, you can rename, delete and create fields & relations anytime you want. Now, that our database design of product and category model with relation is created,
 we are ready to insert some contents.
 
