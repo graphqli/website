@@ -36,11 +36,11 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         googleAnalytics: {
-          trackingID: 'UA-149868545-2',
+          trackingID: 'UA-149868545-3',
           anonymizeIP: false,
         },
         gtag: {
-          trackingID: 'G-52W9MN75ZP',
+          trackingID: 'G-N6YVZ4KXPW',
           anonymizeIP: false,
         },
       }),
