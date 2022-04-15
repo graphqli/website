@@ -523,7 +523,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
                 "icon": {
                     "url": "https://cdn.apito.io/media/apito_website/8XRYHC4LBQ_auth_module.svg"
                 },
-                "link": "/docs/auth/auth-support-in-api",
+                "link": "/docs/addons/auth/auth-support-in-api",
                 "link_text": "See How its Done",
                 "title": "Add Authentication Support to your API"
             },*/
@@ -539,7 +539,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         icon: {
           url: "https://cdn.apito.io/media/apito_website/8XRYHC4LBQ_auth_module.svg",
         },
-        link: "/docs/auth/auth-support-in-api",
+        link: "/docs/addons/auth/auth-support-in-api",
         link_text: "See How its Done",
         title: "Teams & Collaboration",
       },
@@ -609,6 +609,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           title: "Gatsby",
           description:
             "Gatsby is a blazing fast modern site generator for React.",
+          link: "/docs/frameworks/gatsby-cms-with-graphql"
         },
       },
       {
@@ -617,7 +618,8 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           logo: vue,
           title: "Vue",
           description:
-            "Vue.js is an open-source Model-view-viewmodel Javascript framework for using user...",
+            "Vue.js is an open-source Model-View-Viewmodel Javascript framework.",
+          link: "/docs/frameworks/vuejs-integration-with-graphql"
         },
       },
       {
@@ -625,8 +627,9 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         data: {
           logo: nuxt,
           title: "Nuxt.js",
+          link: "/docs/frameworks/nuxtjs-integration-with-graphql",
           description:
-            "Nuxt.js is a free and open-source web appication framework based on Vue.js, Node.js, Webpack, and...",
+            "Nuxt.js is a free and open-source web application framework based on Vue.js, Node.js, Webpack.",
         },
       },
       {
@@ -634,8 +637,9 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         data: {
           logo: nextjs,
           title: "Next.js",
+          link: "/docs/frameworks/nextjs-integration-with-graphql",
           description:
-            "Next.js is a minimalistic framework for server-rendered React applications as well as statically...",
+            "Next.js is a minimalistic framework for server-rendered React applications as well as statically.",
         },
       },
       {
@@ -643,8 +647,9 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         data: {
           logo: reactjs,
           title: "React",
+          link: "/docs/frameworks/reactjs-integration-with-graphql",
           description:
-            "React is a javascript library for building user interfaces. It is maintained by Facebook and a...",
+            "React is a javascript library for building user interfaces. It is maintained by Facebook and a big community",
         },
       },
       {
@@ -652,11 +657,12 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         data: {
           logo: anguler,
           title: "Anguler",
+          link: "/docs/frameworks/anguarjs-integration-with-graphql",
           description:
-            "Anguler is a plartform for building mobile and desktop web applications.",
+            "Angular is a platform for building mobile and desktop web applications.",
         },
       },
-      {
+/*      {
         id: 7,
         data: {
           logo: svelte,
@@ -682,7 +688,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           description:
             "Hugo is one of the most popular open-source static site generators. With its amazing...",
         },
-      },
+      },*/
     ],
   },
   communications: [

@@ -12,7 +12,7 @@ const SdkIntegrationCard = ({ data }) => {
         <Text as="p">{data?.description}</Text>
       </div>
       <div sx={styles.links}>
-        <a href="#" rel="noreferrer" target="_blank">
+        <a href={data?.link} target="_blank">
           Create Project
         </a>
       </div>

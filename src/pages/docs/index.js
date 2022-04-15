@@ -60,7 +60,7 @@ const consoleUsages = [
                 permissions.
             </>
         ),
-        go: 'docs/auth/auth-support-in-api'
+        go: 'docs/addons/auth/auth-support-in-api'
     },
     {
         title: 'Writing Logic / Extend Your API',
