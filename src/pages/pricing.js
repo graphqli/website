@@ -6,7 +6,7 @@ import StickyHeader from "../components/header/sticky-header";
 import Footer from "../components/footer/footer";
 import PricingPage from "../components/pricing";
 import Communications from "../components/support";
-import SDKintegration from "../components/sdk-integraion";
+import SDKintegration from "../components/sdk-integration";
 import {ThemeProvider} from "theme-ui";
 import {themeSettings} from "../theme/theme-settings";
 

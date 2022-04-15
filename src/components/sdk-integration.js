@@ -1,10 +1,10 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Container, Grid } from "theme-ui";
-import SdkIntegrationCard from "./cards/sdk-Integration-card";
+import SdkIntegrationCard from "./cards/sdk-integration-card";
 import SectionHeading from "./section-heading";
 
-const SdkIntegraion = ({ data }) => {
+const SdkIntegration = ({ data }) => {
   return (
     <section id="supported-langs" sx={styles.section}>
       <Container>
@@ -30,7 +30,7 @@ const SdkIntegraion = ({ data }) => {
   );
 };
 
-export default SdkIntegraion;
+export default SdkIntegration;
 
 const styles = {
   grid: {

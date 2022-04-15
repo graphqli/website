@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 import {HomePageData} from "../data/home-page";
 import StickyHeader from "../components/header/sticky-header";
 import SectionHeading from "../components/section-heading";
-import SDKintegration from "../components/sdk-integraion";
+import SDKintegration from "../components/sdk-integration";
 import Communications from "../components/support";
 import Footer from "../components/footer/footer";
 import {FAQData} from "../data/faq";

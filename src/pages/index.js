@@ -6,7 +6,7 @@ import {themeSettings} from "../theme/theme-settings";
 import HeroBanner from "../components/hero-banner";
 import {HomePageData} from "../data/home-page";
 import Seo from "../components/seo";
-import SDKintegration from "../components/sdk-integraion";
+import SDKintegration from "../components/sdk-integration";
 import Communications from "../components/support";
 import Footer from "../components/footer/footer";
 import Features from "../components/features";
