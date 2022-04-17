@@ -11,22 +11,28 @@ import Communications from "../components/support";
 import SDKintegration from "../components/sdk-integration";
 import {ThemeProvider} from "theme-ui";
 import {themeSettings} from "../theme/theme-settings";
+import Layout from '@theme/Layout';
+import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 
 function Pricing() {
+    const context = useDocusaurusContext();
+    const {siteConfig = {}} = context;
+
     return (
-        <ThemeProvider theme={themeSettings}>
-            {/*overwrites title and include SEO*/}
-            <Seo data={HomePageData.seo}/>
-            <Fragment>
+        <Layout
+            title={`${siteConfig.title}`}
+            description={`${siteConfig.tagline}`}>
+            <ThemeProvider theme={themeSettings}>
+                {/*overwrites title and include SEO*/}
                 <Seo data={HomePageData.seo}/>
-                <StickyHeader/>
+                {/*<StickyHeader/>*/}
                 <PricingPage data={PricingData1}/>
                 <PricingPage data={PricingData2}/>
                 <SDKintegration data={HomePageData.sdk}/>
                 <Communications data={HomePageData.communications}/>
                 <Footer/>
-            </Fragment>
-        </ThemeProvider>
+            </ThemeProvider>
+        </Layout>
     );
 }
 

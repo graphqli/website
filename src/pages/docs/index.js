@@ -173,17 +173,16 @@ export default function Home() {
                 <div className="container">
                     <h1 className="hero__title">{'Build Instant API for your Digital Content'}</h1>
                     <p className="hero__subtitle">{'Deliver Projects in Weeks not Months!'}</p>
-                    <div>
-                        <button className="button button--secondary button--outline button--lg">
-                            <Link
-                                to={useBaseUrl('docs/build-api-quick-start-guide')}>
-                                START BUILDING
-                            </Link>
-                        </button>
+                    <div className="hero__button">
+                        <a className="button button--primary button--lg"
+                           href={useBaseUrl('docs/build-api-quick-start-guide')}>
+                            START BUILDING
+                        </a>
                     </div>
+                    <img src="https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png" title={"sfd"} alt={"soso"}/>
+
                 </div>
             </div>
-
 
             <main>
                 {sdks && sdks.length > 0 && (

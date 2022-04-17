@@ -11,26 +11,36 @@ import Communications from "../components/support";
 import Footer from "../components/footer/footer";
 import Features from "../components/features";
 import Projects from "../components/projects";
+import Layout from '@theme/Layout';
 import ExampleQueries from "../components/example-queries";
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function Hello() {
+
+    const context = useDocusaurusContext();
+    const {siteConfig = {}} = context;
+
     return (
-        <ThemeProvider theme={themeSettings}>
-            {/*overwrites title and include SEO*/}
-            <Seo data={HomePageData.seo}/>
-            <Fragment>
-                <StickyHeader/>
+        <Layout
+            title={`${siteConfig.title}`}
+            description={`${siteConfig.tagline}`}>
+            <ThemeProvider theme={themeSettings}>
+                {/*overwrites title and include SEO*/}
+                <Seo data={HomePageData.seo}/>
+
+                {/*                <StickyHeader/>*/}
                 <HeroBanner data={HomePageData.header}/>
-                <ExampleQueries data={HomePageData.exampleQueries} />
-                <Features features={HomePageData.features1} hideSection={true} />
+                <ExampleQueries data={HomePageData.exampleQueries}/>
+                <Features features={HomePageData.features1} hideSection={true}/>
                 {/*<Projects data={HomePageData.projects} />*/}
                 <Features features={HomePageData.features2} hideSection={true}/>
                 <Features features={HomePageData.features3} hideSection={true}/>
                 <SDKintegration data={HomePageData.sdk}/>
                 <Communications data={HomePageData.communications}/>
                 <Footer/>
-            </Fragment>
-        </ThemeProvider>
+
+            </ThemeProvider>
+        </Layout>
     );
 }
 

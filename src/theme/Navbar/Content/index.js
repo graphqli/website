@@ -6,6 +6,7 @@
  */
 import React from 'react';
 import NavbarItem from '@theme/NavbarItem';
+import Link from '@docusaurus/Link';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
 import {
@@ -61,8 +62,16 @@ export default function NavbarContent() {
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarItems items={rightItems} />
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
           {autoAddSearchBar && <SearchBar />}
+            <div>
+                <a className="button button--outline margin-left--md margin-right--sm">
+                    Login
+                </a>
+                <a className="button button--primary margin-right--md">
+                    Sign Up
+                </a>
+            </div>
+            <NavbarColorModeToggle className={styles.colorModeToggle} />
         </>
       }
     />

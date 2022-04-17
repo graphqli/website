@@ -13,25 +13,32 @@ import {FAQData} from "../data/faq";
 import Accordion from "../components/rc-collapse/accordion";
 import {themeSettings} from "../theme/theme-settings";
 import PricingPage from "../components/pricing";
+import Layout from '@theme/Layout';
+import useDocusaurusContext from "@docusaurus/core/lib/client/exports/useDocusaurusContext";
 
 const Faq = () => {
-    return (
-        <ThemeProvider theme={themeSettings}>
-            {/*overwrites title and include SEO*/}
-            <Seo data={HomePageData.seo}/>
-            <Fragment>
-                <Seo data={HomePageData.seo}/>
-                <StickyHeader/>
-                <Container sx={styles.container}>
-                    <SectionHeading title="Frequently Asked Questions" as={'h1'}/>
-                    <Accordion faqs={FAQData}/>
-                </Container>
-                <SDKintegration data={HomePageData.sdk}/>
-                <Communications data={HomePageData.communications}/>
-                <Footer/>
-            </Fragment>
-        </ThemeProvider>
 
+    const context = useDocusaurusContext();
+    const {siteConfig = {}} = context;
+
+    return (
+        <Layout
+            title={`${siteConfig.title}`}
+            description={`${siteConfig.tagline}`}>
+            <ThemeProvider theme={themeSettings}>
+                {/*overwrites title and include SEO*/}
+                <Seo data={HomePageData.seo}/>
+                    <Seo data={HomePageData.seo}/>
+                    <StickyHeader/>
+                    <Container sx={styles.container}>
+                        <SectionHeading title="Frequently Asked Questions" as={'h1'}/>
+                        <Accordion faqs={FAQData}/>
+                    </Container>
+                    <SDKintegration data={HomePageData.sdk}/>
+                    <Communications data={HomePageData.communications}/>
+                    <Footer/>
+            </ThemeProvider>
+        </Layout>
     );
 };
 

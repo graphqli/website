@@ -33,7 +33,10 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+
+          ],
         },
         googleAnalytics: {
           trackingID: 'UA-149868545-3',
@@ -59,13 +62,13 @@ const config = {
       },
       hideableSidebar: true,
       navbar: {
-        title: 'Graphqli Docs',
+        title: 'graphqli',
         logo: {
           alt: 'Graphqli Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {
+/*          {
             to: 'docs/',
             activeBasePath: 'docs/',
             label: 'Index',
@@ -76,23 +79,33 @@ const config = {
             activeBasePath: 'docs/build-api-quick-start-guide',
             label: 'Getting Started',
             position: 'left',
-          },
-          {to: 'blog', label: 'Blog', position: 'left'},
+          },*/
           {
-            href: 'https://graphqli.com',
-            label: 'Website',
+            to: '/',
+            label: 'Home',
             position: 'right',
           },
           {
-            href: 'https://app.graphqli.com',
-            label: 'Graphqli Console',
+            to: '/docs',
+            label: 'Documentation',
             position: 'right',
           },
           {
-            href: 'https://github.com/graphqli/website',
-            label: 'GitHub',
+            to: 'blog',
+            label: 'Blog',
+            position: 'right'
+          },
+          {
+            to: '/pricing',
+            label: 'Pricing',
             position: 'right',
           },
+          {
+            to: '/faq',
+            label: 'FAQ',
+            position: 'right',
+          },
+
         ],
       },
       footer: {
