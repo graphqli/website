@@ -86,7 +86,7 @@ const config = {
             position: 'right',
           },
           {
-            to: '/docs',
+            to: '/docs/build-api-quick-start-guide',
             label: 'Documentation',
             position: 'right',
           },
