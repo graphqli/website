@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 import React from "react";
-import Sticky from 'react-stickynode';
-import Header from './header';
+import Sticky from "react-stickynode";
+import Header from "./header";
 
 const StickyHeader = () => {
   const [isSticky, setSticky] = useState(false);

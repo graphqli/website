@@ -12,3 +12,19 @@
 .navbarHidden {
   transform: translate3d(0, calc(-100% - 2px), 0);
 }
+
+.navbar :global .navbar__inner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1499px) {
+  .navbar :global .navbar__inner {
+    max-width: 1140px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .navbar :global .navbar__inner {
+    max-width: 960px;
+  }
+}

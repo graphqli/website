@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Flex, Button } from 'theme-ui';
+import { jsx, Flex, Button } from "theme-ui";
 
 const RightNav = () => {
   return (
@@ -21,7 +21,7 @@ export default RightNav;
 
 const styles = {
   nav: {
-    alignItems: 'center',
+    alignItems: "center",
     button: {
       fontSize: 15,
       fontWeight: 500,
