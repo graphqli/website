@@ -50,6 +50,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'new_sdks_coming_soon',
+        content: 'Coming Soon: Self Host version of Graphqli on Kubernetes & AWS Cloud',
+        backgroundColor: '#2160FD',
+        textColor: '#fff',
+        isCloseable: true,
+      },
+      hideableSidebar: true,
       navbar: {
         title: 'Graphqli Docs',
         logo: {

@@ -34,6 +34,9 @@ const sidebars = {
             label: 'Framework Integration',
             link: {
                 type: 'generated-index',
+                description: "Let's learn about the most important Docusaurus concepts!",
+                keywords: ['guides','how-to'],
+                image: '/img/docusaurus.png',
             },
             items: [
                 'frameworks/gatsby-cms-with-graphql',
