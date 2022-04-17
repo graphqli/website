@@ -28,12 +28,13 @@ const sidebars = {
      */
 
     docs: [
-        {
-            'Getting started': ['build-api-quick-start-guide'],
-        },
+        'build-api-quick-start-guide',
         {
             type: 'category',
             label: 'Framework Integration',
+            link: {
+                type: 'generated-index',
+            },
             items: [
                 'frameworks/gatsby-cms-with-graphql',
                /* 'frameworks/vuejs-integration-with-graphql',
@@ -46,6 +47,9 @@ const sidebars = {
         {
             type: 'category',
             label: 'Graphqli Console',
+            link: {
+                type: 'generated-index',
+            },
             items: [
                 'console/how-to-design-database-for-your-project',
                 'console/usages-of-swagger-and-graphql-explorer',
@@ -59,6 +63,9 @@ const sidebars = {
         {
             type: 'category',
             label: 'Project Modeling',
+            link: {
+                type: 'generated-index',
+            },
             items: [
                 'model/database-design',
                 'model/choice-between-models'
@@ -67,6 +74,9 @@ const sidebars = {
         {
             type: 'category',
             label: 'Add-Ons',
+            link: {
+                type: 'generated-index',
+            },
             items: [
                 {
                     type: 'category',
@@ -96,6 +106,9 @@ const sidebars = {
         {
             type: 'category',
             label: 'Webhooks',
+            link: {
+                type: 'generated-index',
+            },
             items: [
                 'webhooks/create-webhooks',
             ],
@@ -123,10 +136,16 @@ const sidebars = {
         {
             type: 'category',
             label: 'API Integration',
+            link: {
+                type: 'generated-index',
+            },
             items: [
                 {
                     type: 'category',
                     label: 'RESTful API',
+                    link: {
+                        type: 'generated-index',
+                    },
                     items: [
                         'restapi/integration-with-java',
                         'restapi/integration-with-android',
@@ -144,6 +163,9 @@ const sidebars = {
                 {
                     type: 'category',
                     label: 'GraphQL Client',
+                    link: {
+                        type: 'generated-index',
+                    },
                     items: [
                         'graphql/integration-with-java',
                         'graphql/integration-with-android',

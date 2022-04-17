@@ -6,7 +6,7 @@ export const navbar = [
     {
         label: 'Documentation',
         url: '/docs',
-        outside: true,
+        //outside: true,
     },
     /*  {
         label: 'Projects',

@@ -177,7 +177,7 @@ export default function Home() {
                         <button className="button button--secondary button--outline button--lg">
                             <Link
                                 to={useBaseUrl('docs/build-api-quick-start-guide')}>
-                                Build API
+                                START BUILDING
                             </Link>
                         </button>
                     </div>
