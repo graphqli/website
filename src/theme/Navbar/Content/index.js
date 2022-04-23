@@ -64,10 +64,10 @@ export default function NavbarContent() {
           <NavbarItems items={rightItems} />
           {autoAddSearchBar && <SearchBar />}
             <div>
-                <a className="button button--outline margin-left--md margin-right--sm">
+                <a className="button button--outline margin-left--md margin-right--sm" target="_blank" href='https://app.graphli.com'>
                     Login
                 </a>
-                <a className="button button--primary margin-right--md">
+                <a className="button button--primary margin-right--md" target="_blank" href='https://app.graphqli.com'>
                     Sign Up
                 </a>
             </div>

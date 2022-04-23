@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'graphqli', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
-
+  trailingSlash: false,
   presets: [
     [
       'classic',

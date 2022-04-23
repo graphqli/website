@@ -124,7 +124,7 @@ export const HomePageData = {
         },
         link: "/docs/console/adding-rbac-role-based-permissions-support-to-your-api",
         link_text: "Learn How",
-        title: "Team Roles & Permission",
+        title: "Roles & Permission",
       },
     ],
   },
