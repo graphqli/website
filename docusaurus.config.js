@@ -66,6 +66,8 @@ const config = {
         logo: {
           alt: 'Graphqli Logo',
           src: 'img/logo.svg',
+          width: 50,
+          height: 50
         },
         items: [
 /*          {

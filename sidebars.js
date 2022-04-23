@@ -31,27 +31,12 @@ const sidebars = {
         'build-api-quick-start-guide',
         {
             type: 'category',
-            label: 'Framework Integration',
+            label: 'Graphqli Console Howto',
             link: {
                 type: 'generated-index',
-                description: "Let's learn about the most important Docusaurus concepts!",
-                keywords: ['guides','how-to'],
+                description: "Learn how to build content api in both graphql and rest by using graphqli console",
+                keywords: ['guides', 'how-to', 'documentation'],
                 image: '/img/docusaurus.png',
-            },
-            items: [
-                'frameworks/gatsby-cms-with-graphql',
-               /* 'frameworks/vuejs-integration-with-graphql',
-                'frameworks/nuxtjs-integration-with-graphql',
-                'frameworks/nextjs-integration-with-graphql',
-                'frameworks/reactjs-integration-with-graphql',
-                'frameworks/angularjs-integration-with-graphql'*/
-            ]
-        },
-        {
-            type: 'category',
-            label: 'Graphqli Console',
-            link: {
-                type: 'generated-index',
             },
             items: [
                 'console/how-to-design-database-for-your-project',
@@ -65,9 +50,30 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'Project Modeling',
+            label: 'Framework Integration',
             link: {
                 type: 'generated-index',
+                description: "Build websites your favorite frontend frameworks, or static site generators and host your websites on your favourite providers. No vendor lock-in.",
+                keywords: ['guides', 'how-to'],
+                image: '/img/docusaurus.png',
+            },
+            items: [
+                'frameworks/gatsby-cms-with-graphql',
+                'frameworks/vuejs-integration-with-graphql',
+                'frameworks/nuxtjs-integration-with-graphql',
+                'frameworks/nextjs-integration-with-graphql',
+                'frameworks/reactjs-integration-with-graphql',
+                'frameworks/angularjs-integration-with-graphql'
+            ]
+        },
+        {
+            type: 'category',
+            label: 'Content/Database Modeling',
+            link: {
+                type: 'generated-index',
+                description: "Learn effective ways to models for your content when building a content api. Learn the difference between single vs multi page models and how it affects your content",
+                keywords: ['guides', 'how-to', 'documentation'],
+                image: '/img/docusaurus.png',
             },
             items: [
                 'model/database-design',
@@ -76,39 +82,7 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'Add-Ons',
-            link: {
-                type: 'generated-index',
-            },
-            items: [
-                {
-                    type: 'category',
-                    label: 'Authentication',
-                    items: [
-                        'addons/auth/auth-support-in-api',
-                        'addons/auth/create-user',
-                        'addons/auth/user-login',
-                        'addons/auth/using-login-token'
-                    ],
-                },
-            ],
-        },
-
-        /*    {
-              type: 'category',
-              label: 'Writing Logic',
-              items: [
-                'logic/writing-cloud-functions',
-                'logic/enable-lambda-extension',
-                'logic/create-apito-function',
-                'logic/create-lambda-function',
-                'logic/connecting-function',
-                'logic/calling-function'
-              ],
-            },*/
-        {
-            type: 'category',
-            label: 'Webhooks',
+            label: 'Configuring Webhooks',
             link: {
                 type: 'generated-index',
             },
@@ -138,7 +112,7 @@ const sidebars = {
             },*/
         {
             type: 'category',
-            label: 'API Integration',
+            label: 'API Integration Guide',
             link: {
                 type: 'generated-index',
             },
@@ -148,19 +122,21 @@ const sidebars = {
                     label: 'RESTful API',
                     link: {
                         type: 'generated-index',
+                        description: "REST is the most logical, efficient and widespread standard in the creation of APIs for Internet services.",
+                        keywords: ['guides', 'how-to', 'rest api', 'restful api', 'api integration'],
+                        image: '/img/docusaurus.png',
                     },
                     items: [
-                        'restapi/integration-with-java',
-                        'restapi/integration-with-android',
-                        'restapi/integration-with-ios',
-                        'restapi/integration-with-flutter',
-                        'restapi/integration-with-golang',
-                        'restapi/integration-with-csharp',
-                        'restapi/integration-with-javascript',
-                        'restapi/integration-with-php',
-                        'restapi/integration-with-python',
-                        'restapi/integration-with-ruby',
-                        'restapi/integration-with-other'
+                        'api-integration/restapi/integration-with-java',
+                        'api-integration/restapi/integration-with-android',
+                        'api-integration/restapi/integration-with-ios',
+                        'api-integration/restapi/integration-with-flutter',
+                        'api-integration/restapi/integration-with-golang',
+                        'api-integration/restapi/integration-with-csharp',
+                        'api-integration/restapi/integration-with-javascript',
+                        'api-integration/restapi/integration-with-php',
+                        'api-integration/restapi/integration-with-python',
+                        'api-integration/restapi/integration-with-ruby'
                     ],
                 },
                 {
@@ -168,19 +144,21 @@ const sidebars = {
                     label: 'GraphQL Client',
                     link: {
                         type: 'generated-index',
+                        description: "GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more",
+                        keywords: ['guides', 'how-to', 'graphql client', 'graphql api', 'api integration', 'graphql server'],
+                        image: '/img/docusaurus.png',
                     },
                     items: [
-                        'graphql/integration-with-java',
-                        'graphql/integration-with-android',
-                        'graphql/integration-with-ios',
-                        'graphql/integration-with-flutter',
-                        'graphql/integration-with-golang',
+                        'api-integration/graphql/integration-with-java',
+                        'api-integration/graphql/integration-with-android',
+                        'api-integration/graphql/integration-with-ios',
+                        'api-integration/graphql/integration-with-flutter',
+                        'api-integration/graphql/integration-with-golang',
                         //'graphql/integration-with-csharp',
-                        'graphql/integration-with-react',
-                        'graphql/integration-with-php',
-                        'graphql/integration-with-python',
-                        'graphql/integration-with-ruby',
-                        'graphql/integration-with-other'
+                        'api-integration/graphql/integration-with-react',
+                        'api-integration/graphql/integration-with-php',
+                        'api-integration/graphql/integration-with-python',
+                        'api-integration/graphql/integration-with-ruby'
                     ],
                 },
             ],
@@ -198,6 +176,53 @@ const sidebars = {
              }
            ],
          }*/
+        {
+            type: 'category',
+            label: 'Extending Graphqli',
+            link: {
+                type: 'generated-index',
+                description: "You can extend Graphqli with Various different plugins available in Settings. You can even extend graphqli api through cloud functions, add auth support and many more.",
+                keywords: ['guides', 'how-to'],
+                image: '/img/docusaurus.png',
+            },
+            items: [
+                {
+                    type: 'category',
+                    label: 'Adding Authentication Support',
+                    link: {
+                        type: 'generated-index',
+                        description: "If you app contents are protected then you can extend Graphqli to be able to add login and signup functionality for your app users.",
+                        keywords: ['guides', 'how-to', 'auth', 'login api', 'signup api'],
+                        image: '/img/docusaurus.png',
+                    },
+                    items: [
+                        'extensions/auth/auth-support-in-api',
+                        'extensions/auth/register',
+                        'extensions/auth/login',
+                        'extensions/auth/using-login-token'
+                    ],
+                },
+                {
+                    type: 'category',
+                    label: 'Using Cloud Functions',
+                    link: {
+                        type: 'generated-index',
+                        description: "Cloud function makes a Headless CMS very extensible, robust & powerful. You can easily extend your existing graphql & restful api by using cloud functions.",
+                        keywords: ['guides', 'how-to', 'auth', 'login api', 'signup api'],
+                        image: '/img/docusaurus.png',
+                    },
+                    items: [
+                        'extensions/logic/configuring-aws',
+                        'extensions/logic/writing-cloud-functions',
+                        'extensions/logic/enable-lambda-extension',
+                        'extensions/logic/create-graphqli-function',
+                        'extensions/logic/create-lambda-function',
+                        'extensions/logic/connecting-function',
+                        'extensions/logic/calling-function'
+                    ],
+                },
+            ],
+        },
     ],
 };
 

@@ -656,8 +656,8 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         id: 6,
         data: {
           logo: anguler,
-          title: "Anguler",
-          link: "/docs/frameworks/anguarjs-integration-with-graphql",
+          title: "Angular",
+          link: "/docs/frameworks/angularjs-integration-with-graphql",
           description:
             "Angular is a platform for building mobile and desktop web applications.",
         },
