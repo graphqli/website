@@ -106,7 +106,7 @@ export const HomePageData = {
                 "icon": {
                     "url": "https://cdn.apito.io/media/apito_website/8XRYHC4LBQ_auth_module.svg"
                 },
-                "link": "/docs/logic/writing-cloud-functions",
+                "link": "/docs/extensions/logic/writing-cloud-functions",
                 "link_text": "Extend Your API",
                 "title": "Write Cloud Function to Extend your API"
             }*/
@@ -523,7 +523,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
                 "icon": {
                     "url": "https://cdn.apito.io/media/apito_website/8XRYHC4LBQ_auth_module.svg"
                 },
-                "link": "/docs/addons/auth/auth-support-in-api",
+                "link": "/docs/extensions/auth/auth-support-in-api",
                 "link_text": "See How its Done",
                 "title": "Add Authentication Support to your API"
             },*/
@@ -539,7 +539,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
         icon: {
           url: "https://cdn.apito.io/media/apito_website/8XRYHC4LBQ_auth_module.svg",
         },
-        link: "/docs/addons/auth/auth-support-in-api",
+        link: "/docs/extensions/auth/auth-support-in-api",
         link_text: "See How its Done",
         title: "Teams & Collaboration",
       },

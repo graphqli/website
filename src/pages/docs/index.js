@@ -60,7 +60,7 @@ const consoleUsages = [
                 permissions.
             </>
         ),
-        go: 'docs/addons/auth/auth-support-in-api'
+        go: 'docs/extensions/auth/auth-support-in-api'
     },
     {
         title: 'Writing Logic / Extend Your API',
@@ -71,7 +71,7 @@ const consoleUsages = [
                 Lambda or Google Cloud Functions.
             </>
         ),
-        go: 'docs/logic/writing-cloud-functions'
+        go: 'docs/extensions/logic/writing-cloud-functions'
     }
 
 ];
@@ -80,47 +80,47 @@ const sdks = [
     {
         title: 'ReactJS',
         imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
-        go: 'docs/graphql/integration-with-react'
+        go: 'docs/api-integration/graphql/integration-with-react'
     },
     {
         title: 'Flutter',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/WWTEFOOADR_flutter.svg',
-        go: 'docs/graphql/integration-with-flutter'
+        go: 'docs/api-integration/graphql/integration-with-flutter'
     },
     {
         title: 'Kotlin / Android',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/KAAMWAD3QY_kotlin.svg',
-        go: 'docs/graphql/integration-with-android'
+        go: 'docs/api-integration/graphql/integration-with-android'
     },
     {
         title: 'Swift / iOS',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/JTRDZQ0WM1_swift.svg',
-        go: 'docs/graphql/integration-with-ios'
+        go: 'docs/api-integration/graphql/integration-with-ios'
     },
     {
         title: 'C# / Dot Net',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/3U1XI8OKPT_csharp.svg',
-        go: 'docs/restapi/integration-with-csharp'
+        go: 'docs/api-integration/restapi/integration-with-csharp'
     },
     {
         title: 'Java',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/HXOCZ5UKJH_java.svg',
-        go: 'docs/graphql/integration-with-java'
+        go: 'docs/api-integration/graphql/integration-with-java'
     },
     {
         title: 'PHP',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/UMZF89GEY6_php.svg',
-        go: 'docs/graphql/integration-with-php'
+        go: 'docs/api-integration/graphql/integration-with-php'
     },
     {
         title: 'Golang',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/P3QBDBFVHC_go.svg',
-        go: 'docs/graphql/integration-with-golang'
+        go: 'docs/api-integration/graphql/integration-with-golang'
     },
     {
         title: 'Python',
         imageUrl: 'https://cdn.apito.io/media/apito_documentation/FVHA46Z2TG_python.svg',
-        go: 'docs/graphql/integration-with-python'
+        go: 'docs/api-integration/graphql/integration-with-python'
     },
 
 ];
