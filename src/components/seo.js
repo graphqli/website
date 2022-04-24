@@ -8,10 +8,9 @@ const Seo = ({data}) => {
             <meta property="og:title" content={data.title} />
             <meta property="og:description"
                   content={data.description} />
-                <meta property="og:type" content="website" />
+            <meta property="og:type" content="website" />
             <meta property="og:image" content="https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png" />
             <link rel="icon" href="/img/favicon.ico"/>
-            <link rel="canonical" href="https://apito.io"/>
             <link rel="preconnect" href="https://fonts.gstatic.com"/>
             <link
                 rel="stylesheet"
