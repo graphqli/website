@@ -10,18 +10,29 @@ import vue from "../icons/png/logo_vue.png";
 
 export const HomePageData = {
   seo: {
-    title: "API Driven Headless CMS for your Content",
+    title: "API Driven Extensible Headless CMS",
     description:
       "The most powerful Headless CMS for your Content with Team Collaborations, Revision, CDN & Much more",
     keywords:
       "api, graphql, rest api, cms headless, cms for website, api integration, free cms, free api, api development, free headless cms, develop an api, api roles, auth api, graphql explorer, multilingual cms, api in cloud",
   },
   header: {
-    //title: 'Develop API for web and mobile apps Build Instantly, Deploy in Seconds',
+    title: 'Instant API for Your Content',
     image:
       "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
     description:
-      "The most powerful Headless CMS for your Content with Team Collaborations, Revision, CDN & Much more ..",
+      "The Most Powerful Extensible Headless CMS for Your Data with Team Collaborations, Content Revision, CDN, Webhooks & Much more",
+    button : {
+      label : 'Explore Full Features',
+      link : '/features'
+    }
+  },
+  featurePage: {
+    title: 'Modern & Extensible Headless CMS',
+    image:
+        "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
+    description:
+        "Explore the powerful CMS with Content Modeling Tools with Team Collaborations, Content Revision, CDN, Webhooks & Much more",
   },
   features1: {
     slogan: "None",

@@ -30,7 +30,7 @@ function Pricing() {
                 <PricingPage data={PricingData2}/>
                 <SDKintegration data={HomePageData.sdk}/>
                 <Communications data={HomePageData.communications}/>
-                <Footer/>
+               {/* <Footer/>*/}
             </ThemeProvider>
         </Layout>
     );

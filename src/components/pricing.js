@@ -37,7 +37,7 @@ const PricingPage = ({data}) => {
           </Button>
         </Flex>
         <Grid sx={styles.grid}>
-          {data?.plans.map((item) => (
+          {data?.plans?.map((item) => (
             <PriceTable key={item.id} id={item.id} data={item} isMonthly={isMonthly} />
           ))}
         </Grid>

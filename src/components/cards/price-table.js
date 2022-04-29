@@ -12,43 +12,49 @@ const PriceTable = ({ id, data, isMonthly }) => {
         <Text as="p">{data.description}</Text>
       </header>
       <ul sx={styles.features}>
-        {data.features.map((feat, i) => (
+        {data?.features?.map((feat, i) => (
           <li key={i}>
             <CheckCircleFilled />
             {feat}
           </li>
         ))}
       </ul>
-      <div sx={styles.price}>
-        {isMonthly ? (
-          <Fragment>
-            {data?.price?.monthly_discounted > 0 && (
-              <del sx={styles.regularPrice}>
-                <span>${data?.price?.monthly}</span> /Monthly
-              </del>
-            )}
-            <span sx={styles.discountedPrice}>
+        {data?.price && (
+            <div sx={styles.price}>
+                {isMonthly ? (
+                    <Fragment>
+                        {data?.price?.monthly_discounted > 0 && (
+                            <del sx={styles.regularPrice}>
+                                <span>${data?.price?.monthly}</span> /Monthly
+                            </del>
+                        )}
+                        <span sx={styles.discountedPrice}>
               <span>${data?.price?.monthly_discounted}</span> /Monthly
             </span>
-          </Fragment>
-        ) : (
-          <Fragment>
-            {data?.price?.yearly_discounted > 0 && (
-              <del sx={styles.regularPrice}>
-                <span sx={{ fontSize: 18 }}>${data?.price?.yearly}</span> /Annual
-              </del>
-            )}
-            <span sx={styles.discountedPrice}>
-              <span>${data?.price?.yearly_discounted.toFixed(1)}</span> /Annual
-            </span>
-          </Fragment>
+                    </Fragment>
+                ) : (
+                    <Fragment>
+                        {data?.price?.yearly_discounted > 0 && (
+                            <del sx={styles.regularPrice}>
+                                <span sx={{ fontSize: 18 }}>${data?.price?.yearly}</span> /Annual
+                            </del>
+                        )}
+                        {data?.price?.yearly_discounted > 0 && (
+                            <span sx={styles.discountedPrice}>
+                    <span>${data?.price?.yearly_discounted.toFixed(1)}</span> /Annual
+                </span>
+                        )}
+                    </Fragment>
+                )}
+            </div>
         )}
-      </div>
-      <footer sx={styles.footer}>
-        <a target="_blank" rel="noreferrer" href={id === 4 ? 'mailto:accounts@apito.io' : 'https://app.apito.io'}>
-        <Button variant="primary">{data.buttonLabel}</Button>
-        </a>
-      </footer>
+        {data?.buttonLabel && (
+                <footer sx={styles.footer}>
+                    <a target="_blank" rel="noreferrer" href={id === 4 ? 'mailto:accounts@apito.io' : 'https://app.apito.io'}>
+                        <Button variant="primary">{data.buttonLabel}</Button>
+                    </a>
+                </footer>
+        )}
     </div>
   );
 };

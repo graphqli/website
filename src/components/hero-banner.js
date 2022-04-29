@@ -12,11 +12,13 @@ const HeroBanner = ({ data }) => {
       <Container>
         <Grid sx={styles.grid}>
           <Box sx={styles.heroContent}>
-            <Heading as="h1">Instant API for your Content</Heading>
+            <Heading as="h1">{data?.title}</Heading>
             <p>{data?.description}</p>
-            {/*<a href="https://app.apito.io" target="_blank">
-              <Button>Start Building API</Button>
-            </a>*/}
+            {data?.button && (
+                <a href={data?.button?.link}>
+                  <Button>{data?.button?.label}</Button>
+                </a>
+            )}
           </Box>
           {/* <Box as="figure">
             <Image
@@ -46,7 +48,7 @@ const styles = {
     // minHeight: ["auto", null, null, "calc(100vh - 119px)"],
   },
   heroContent: {
-    maxWidth: 860,
+    maxWidth: 960,
     mx: "auto",
     textAlign: "center",
     h1: {
@@ -59,7 +61,7 @@ const styles = {
     p: {
       fontSize: [16, null, null, 20],
       lineHeight: 2,
-      maxWidth: 520,
+      maxWidth: 620,
       margin: "25px auto 0",
     },
     button: {

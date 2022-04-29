@@ -36,7 +36,7 @@ const Faq = () => {
                     </Container>
                     <SDKintegration data={HomePageData.sdk}/>
                     <Communications data={HomePageData.communications}/>
-                    <Footer/>
+                    {/*<Footer/>*/}
             </ThemeProvider>
         </Layout>
     );

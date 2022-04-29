@@ -29,8 +29,8 @@ function Hello() {
                 <Seo data={HomePageData.seo}/>
 
                 {/*                <StickyHeader/>*/}
-                <HeroBanner data={HomePageData.header}/>
-                <ExampleQueries data={HomePageData.exampleQueries}/>
+                <HeroBanner data={HomePageData.featurePage}/>
+                {/*<ExampleQueries data={HomePageData.exampleQueries}/>*/}
                 <Features features={HomePageData.features1} hideSection={true}/>
                 {/*<Projects data={HomePageData.projects} />*/}
                 <Features features={HomePageData.features2} hideSection={true}/>

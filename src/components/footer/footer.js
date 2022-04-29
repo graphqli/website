@@ -10,14 +10,14 @@ const Footer = () => {
     <footer id="footer" sx={styles.section}>
       <div sx={styles.footerContent}>
         <Logo />
-        <nav sx={styles.nav}>
+{/*        <nav sx={styles.nav}>
           {navbar.map((item, i) => (
             <Link key={i} href={item.url} target={item.outside ? "_blank" : null}>
              {item.label}
             </Link>
           ))}
-        </nav>
-        <div sx={styles.copyright}>
+        </nav>*/}
+{/*        <div sx={styles.copyright}>
           Copyright {new Date().getFullYear()} By graphqli.com |{' '}
           <Link href="/privacy-policy">
             <a href="/privacy-policy" sx={{ mx: '5px' }}>Privacy Policy</a>
@@ -26,7 +26,7 @@ const Footer = () => {
           <Link href="/user-agreement">
             <a href="/user-agreement" sx={{ mx: '5px' }}>User Agreement</a>
           </Link>
-        </div>
+        </div>*/}
       </div>
     </footer>
   );
@@ -37,7 +37,9 @@ export default Footer;
 const styles = {
   footerContent: {
     maxWidth: 600,
-    margin: '55px auto',
+    maxHeight: 50,
+    margin: 'auto',
+    marginBottom: '50px',
     textAlign: 'center',
     color: 'textAlt',
     svg: {
