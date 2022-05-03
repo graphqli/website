@@ -11,6 +11,7 @@ export const themeSettings = {
     highlight: "#9f9f9f",
     gray: "#6c6c6c",
     accent: "#3f3f3f",
+    red: "#EA3A60",
   },
   fonts: {
     body: "DM Sans, sans-serif",
