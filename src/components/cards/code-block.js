@@ -18,7 +18,7 @@ const CodeBlock = ({ icon, title, description, code, method, language }) => {
     <div sx={styles.codeBlock}>
       <Flex as="header" sx={styles.codeHeader}>
         {icon && icon}
-        <span className="lang-name">{title} [ {description} ]</span>
+        <span className="lang-name">{title}</span>
         {method && (
           <span
             className="method"

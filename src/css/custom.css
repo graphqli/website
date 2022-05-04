@@ -54,3 +54,10 @@
   text-align: center;
   margin-bottom: 25px;
 }
+
+article img  {
+  background: white;
+  box-shadow: 0px 6px 47px rgba(38, 78, 118, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -82,12 +82,18 @@ const sidebars = {
         },
         {
             type: 'category',
-            label: 'Configuring Webhooks',
+            label: 'Auto Deploy Pipeline',
             link: {
                 type: 'generated-index',
+                description: "Create Auto Deployments with Webhooks",
+                keywords: ['guides', 'how-to', 'documentation'],
+                image: '/img/docusaurus.png',
             },
             items: [
                 'webhooks/create-webhooks',
+                'webhooks/website-deployment-using-gitlab-pipeline',
+                'webhooks/website-deployment-using-vercel-pipeline',
+                'webhooks/website-deployment-using-netlify-build-hooks'
             ],
         },
         /*    {

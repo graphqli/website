@@ -28,15 +28,14 @@ const Faq = () => {
             <ThemeProvider theme={themeSettings}>
                 {/*overwrites title and include SEO*/}
                 <Seo data={HomePageData.seo}/>
-                    <Seo data={HomePageData.seo}/>
-                    <StickyHeader/>
-                    <Container sx={styles.container}>
-                        <SectionHeading title="Frequently Asked Questions" as={'h1'}/>
-                        <Accordion faqs={FAQData}/>
-                    </Container>
-                    <SDKintegration data={HomePageData.sdk}/>
-                    <Communications data={HomePageData.communications}/>
-                    {/*<Footer/>*/}
+                {/*<StickyHeader/>*/}
+                <Container sx={styles.container}>
+                    <SectionHeading title="Frequently Asked Questions" as={'h1'}/>
+                    <Accordion faqs={FAQData}/>
+                </Container>
+                <SDKintegration data={HomePageData.sdk}/>
+                <Communications data={HomePageData.communications}/>
+                {/*<Footer/>*/}
             </ThemeProvider>
         </Layout>
     );

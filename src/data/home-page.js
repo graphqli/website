@@ -17,11 +17,11 @@ export const HomePageData = {
       "api, graphql, rest api, cms headless, cms for website, api integration, free cms, free api, api development, free headless cms, develop an api, api roles, auth api, graphql explorer, multilingual cms, api in cloud",
   },
   header: {
-    title: 'Instant API for Your Content',
+    title: 'Modern & Extensible Headless CMS',
     image:
       "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
     description:
-      "The Most Powerful Extensible Headless CMS for Your Data with Team Collaborations, Content Revision, CDN, Webhooks & Much more",
+      "Build Instant REST & Graphql API for Your Data with Content Revision, CDN, Webhooks, Team Collaborations & Much more",
     button : {
       label : 'Explore Full Features',
       link : '/features'
@@ -146,9 +146,9 @@ export const HomePageData = {
       {
         id: 1,
         title: "Content Get",
-        description: 'Get Website Homepage Data',
+        description: 'Query : Fetch Homepage Data of a Website',
         codes: {
-          rest: `curl https://api.apito.io/secured/rest/products?name:contains=”pro”`,
+          rest: `curl https://api.apito.io/secured/rest/homepage`,
           graphql: `query GetHomePage {
   homepage {
     id
@@ -185,7 +185,7 @@ export const HomePageData = {
       {
         id: 2,
         title: "Filtering and Sorting",
-        description: "Filtering Product by Ratting and Sorting by Price",
+        description: "Query : Filtering Products by Ratting and Sorting by Price",
         codes: {
           rest: `curl https://api.apito.io/secured/rest/ecom/products?rating:gte=4&sort=-price`,
           graphql: `query FilterProductByPriceAndRating {
@@ -224,9 +224,9 @@ export const HomePageData = {
       {
         id: 3,
         title: "Complex Filtering",
-        description: "Searching for Shirts with prices greater than 100",
+        description: "Query : Searching for Shirts with Prices Greater than 100",
         codes: {
-          rest: `curl https://api.apito.io/secured/rest/ecom/products?price:lt=100
+          rest: `curl https://api.apito.io/secured/rest/ecom/products?price:gt=100
 curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           graphql: `query NestedPricedProductSearchByCategory {
   categories(

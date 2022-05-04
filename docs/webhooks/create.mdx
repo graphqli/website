@@ -15,8 +15,25 @@ For example if you want to update your website each time data in a model updates
 
 ## Prerequisite
 
-1. Models
-2. Roles
+  * Models
 
+If you are looking a way to integrate third party application, webhook could call your send your data based on operation
+to a third party URL. You can use this to auto deploy website.
 
+### Creating a Webhook
+
+To create a webhook you have to go to `Settings` in Graphqli Console then `Webhooks` from the left
+navigation bar and click `Create a Webhook`
+
+You  have to fill in:
+
+  * `Name` Name of the webhooks
+  * `Model` The model that the webhook will reflect to
+  * `Operation` Choose from which action you would like to trigger the webhook for
+  * `Webhook URL` The Gitlab Pipeline Trigger URL
+
+<img alt='Creating Webhooks' width='auto' height='auto' src='https://cdn.apito.io/media/apito_documentation/PPVS1LJSN9_graphqli_webhooks_create.png' />
+
+Click on the `CREATE HOOK` to create your trigger hook. Now each time your model updates, in this example `page` updates it will send a `POST` trigger to the URL with the `page` data
+in the request body as json.
 

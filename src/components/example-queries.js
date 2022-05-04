@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Container } from "theme-ui";
+import {jsx, Container, Heading, Message, Badge} from "theme-ui";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import SectionHeading from "./section-heading";
@@ -25,22 +25,21 @@ const ExampleQueries = ({ data }) => {
           <div>
             {data?.data.map((item) => (
               <TabPanel key={item.id}>
-{/*                <CodeBlock
+                <Badge style={{ fontSize: '14px', padding: '15px', borderRadius: '8px'}}>{item.description}</Badge>
+                <CodeBlock
                     icon={<RESTIcon />}
                     title="REST API"
                     code={item.codes.rest}
                     method={item.restMethod ? item.restMethod : "get"}
                     language="shell"
-                />*/}
+                />
                 <CodeBlock
                   icon={<GraphqlIcon />}
                   title="GraphQL"
                   code={item.codes.graphql}
                   method="post"
                   language="graphql"
-                  description={item.description}
                 />
-
               </TabPanel>
             ))}
           </div>

@@ -3,7 +3,6 @@
 import { Heading, Image, jsx, Text } from "theme-ui";
 
 const SdkIntegrationCard = ({ data }) => {
-  console.log(data.logo);
   return (
     <div sx={styles.card}>
       <div sx={styles.content}>
