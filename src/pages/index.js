@@ -14,6 +14,7 @@ import Projects from "../components/projects";
 import Layout from '@theme/Layout';
 import ExampleQueries from "../components/example-queries";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Databases from "../components/databases";
 
 function Hello() {
 
@@ -32,13 +33,14 @@ function Hello() {
                 <HeroBanner data={HomePageData.header}/>
                 <ExampleQueries data={HomePageData.exampleQueries}/>
                 <Features features={HomePageData.features1} hideSection={true}/>
+                <Databases data={HomePageData.databases}/>
                 {/*<Projects data={HomePageData.projects} />*/}
                 <Features features={HomePageData.features2} hideSection={true}/>
                 <Features features={HomePageData.features3} hideSection={true}/>
                 <SDKintegration data={HomePageData.sdk}/>
-                <Communications data={HomePageData.communications}/>
-                {/*<Footer/>*/}
 
+                <Communications data={HomePageData.communications}/>
+                <Footer/>
             </ThemeProvider>
         </Layout>
     );

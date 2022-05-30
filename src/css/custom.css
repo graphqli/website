@@ -46,6 +46,10 @@
   color: #EA3A60
 }
 
+.navbar__title {
+  font-size: 20px;
+}
+
 .hero__title, .hero__subtitle {
   text-align: center;
 }

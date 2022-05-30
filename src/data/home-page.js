@@ -1,10 +1,22 @@
 import anguler from "../icons/png/logo_angular.png";
+import arangoDB from "../icons/png/logo_arangoDB.png";
+import casandra from "../icons/png/logo_casandra.png";
+import couchbase from "../icons/png/logo_couchbase.png";
+import couchDB from "../icons/png/logo_couchDB.png";
+import dynamoDB from "../icons/png/logo_dynamoDB.png";
+import firestore from "../icons/png/logo_firestore.png";
 import gatsby from "../icons/png/logo_gatsby.png";
 import hugo from "../icons/png/logo_hugo.png";
+import mariaDB from "../icons/png/logo_mariaDB.png";
+import mongoDB from "../icons/png/logo_mongoDB.png";
+import mySQL from "../icons/png/logo_mySQL.png";
 import nextjs from "../icons/png/logo_nextjs.png";
 import nuxt from "../icons/png/logo_nuxt.png";
+import oracle from "../icons/png/logo_oracle.png";
+import postgresSQL from "../icons/png/logo_postgresSQL.png";
 import reactjs from "../icons/png/logo_react.png";
 import sapper from "../icons/png/logo_sapper.png";
+import SQLServer from "../icons/png/logo_SQLServer.png";
 import svelte from "../icons/png/logo_svelte.png";
 import vue from "../icons/png/logo_vue.png";
 
@@ -21,7 +33,7 @@ export const HomePageData = {
     image:
       "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
     description:
-      "Build Instant REST & Graphql API for Your Data with Content Revision, CDN, Webhooks, Team Collaborations & Much more",
+      "Build Instant RESTful & Graphql API for Your Data with Content Revision, CDN, Webhooks, Team Collaborations, Cloud Functions & Much more",
     button : {
       label : 'Explore Full Features',
       link : '/features'
@@ -146,7 +158,7 @@ export const HomePageData = {
       {
         id: 1,
         title: "Content Get",
-        description: 'Query : Fetch Homepage Data of a Website',
+        description: 'Get Website Homepage Data',
         codes: {
           rest: `curl https://api.apito.io/secured/rest/homepage`,
           graphql: `query GetHomePage {
@@ -224,9 +236,9 @@ export const HomePageData = {
       {
         id: 3,
         title: "Complex Filtering",
-        description: "Query : Searching for Shirts with Prices Greater than 100",
+        description: "Searching for Shirts with prices greater than 100",
         codes: {
-          rest: `curl https://api.apito.io/secured/rest/ecom/products?price:gt=100
+          rest: `curl https://api.apito.io/secured/rest/ecom/products?price:lt=100
 curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           graphql: `query NestedPricedProductSearchByCategory {
   categories(
@@ -700,6 +712,24 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
             "Hugo is one of the most popular open-source static site generators. With its amazing...",
         },
       },*/
+    ],
+  },
+  databases: {
+    header: "CONNECT EASILY",
+    title: "Connect with Most Popular Databases",
+    data: [
+      { id: 1, title: "PostgresSQL", logo: postgresSQL },
+      { id: 2, title: "SQL Server", logo: SQLServer },
+      { id: 3, title: "MySQL", logo: mySQL },
+      { id: 4, title: "MariaDB", logo: mariaDB },
+      { id: 5, title: "ArangoDB", logo: arangoDB },
+      { id: 6, title: "MongoDB", logo: mongoDB },
+      { id: 7, title: "Firestore", logo: firestore },
+      { id: 8, title: "DynamoDB", logo: dynamoDB },
+      { id: 9, title: "Couchbase", logo: couchbase },
+      { id: 10, title: "Casandra", logo: casandra },
+      { id: 11, title: "CouchDB", logo: couchDB },
+      { id: 12, title: "Oracle", logo: oracle },
     ],
   },
   communications: [

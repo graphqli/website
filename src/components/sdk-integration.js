@@ -36,7 +36,12 @@ const styles = {
   grid: {
     gridGap: "24px",
     justifyContent: [null, null, "center", "unset"],
-    gridTemplateColumns: ["repeat(1, 1fr)", null, 400, "repeat(3, 1fr)"],
+    gridTemplateColumns: [
+      "repeat(1, 1fr)",
+      "repeat(2, 1fr)",
+      "repeat(2, 1fr)",
+      "repeat(3, 1fr)",
+    ],
   },
   section: {
     pt: [40, null, null, null, 60],

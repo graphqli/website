@@ -62,7 +62,7 @@ const config = {
             },
             hideableSidebar: true,
             navbar: {
-                title: 'graphqli',
+                title: 'apito.io',
                 logo: {
                     alt: 'Graphqli Logo',
                     src: 'img/logo.svg',
