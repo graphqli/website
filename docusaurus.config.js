@@ -6,14 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Graphqli Docs',
+    title: 'Apito Docs',
     tagline: 'The most powerful Headless CMS for your Content with Team Collaborations, Revision, CDN & Much more ..',
-    url: 'https://graphqli.com',
+    url: 'https://apito.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'graphqli', // Usually your GitHub org/user name.
+    organizationName: 'apito', // Usually your GitHub org/user name.
     projectName: 'website', // Usually your repo name.
     trailingSlash: false,
     presets: [
@@ -55,16 +55,20 @@ const config = {
         ({
             announcementBar: {
                 id: 'new_sdks_coming_soon',
-                content: 'Coming Soon: Self Host version of Graphqli on Kubernetes & AWS Cloud',
+                content: 'Coming Soon: Self Host version of Apito on Kubernetes & AWS Cloud',
                 backgroundColor: '#2160FD',
                 textColor: '#fff',
                 isCloseable: true,
             },
-            hideableSidebar: true,
+            docs : {
+                sidebar : {
+                    hideable: true,
+                }
+            },
             navbar: {
                 title: 'apito.io',
                 logo: {
-                    alt: 'Graphqli Logo',
+                    alt: 'Apito Logo',
                     src: 'img/logo.svg',
                     width: 50,
                     height: 50
@@ -91,11 +95,18 @@ const config = {
                         to: '/features',
                         label: 'Features',
                         position: 'right',
-                    }, {
-                        to: '/self-host-graphqli',
+                    },
+                    {
+                        to: '/self-host-apito',
                         label: 'Self Host',
                         position: 'right',
                     },
+                    {
+                        to: '/self-host-apito',
+                        label: 'BaaS',
+                        position: 'right',
+                    },
+
                     {
                         to: '/pricing',
                         label: 'Pricing',
@@ -103,7 +114,7 @@ const config = {
                     },
                     {
                         to: '/docs/build-api-quick-start-guide',
-                        label: 'Documentation',
+                        label: 'Docs',
                         position: 'right',
                     },
                     {
@@ -133,7 +144,7 @@ const config = {
                                 to: '/features',
                                 label: 'Features',
                             }, {
-                                to: '/self-host-graphqli',
+                                to: '/self-host-apito',
                                 label: 'Self Host',
                             },
                             {
@@ -155,7 +166,7 @@ const config = {
                         items: [
                             {
                                 label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/questions/tagged/graphqli',
+                                href: 'https://stackoverflow.com/questions/tagged/apito',
                             },
                             {
                                 label: 'Discord',
@@ -163,7 +174,7 @@ const config = {
                             },
                             {
                                 label: 'Twitter',
-                                href: 'https://twitter.com/graphqli',
+                                href: 'https://twitter.com/apito_io',
                             },
                         ],
                     },
@@ -180,7 +191,7 @@ const config = {
                             },
                             {
                                 label: 'GitHub',
-                                href: 'https://github.com/graphqli',
+                                href: 'https://github.com/apito.io',
                             },
                             {
                                 label: 'Privacy Policy',
@@ -193,7 +204,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} Graphqli`,
+                copyright: `Copyright © ${new Date().getFullYear()} Apito`,
             },
             prism: {
                 theme: lightCodeTheme,

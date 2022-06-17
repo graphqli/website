@@ -1,6 +1,6 @@
 ---
 sidebar_label: Android
-title: Graphqli REST API Integration with Android
+title: Apito REST API Integration with Android
 ---
 <head>
     <meta property="og:type" content="article" />
@@ -41,7 +41,7 @@ OkHttpClient client = new OkHttpClient.Builder()
 
 Retrofit retrofit = new Retrofit.Builder()
 .client(client)
-.baseUrl("https://api.graphqli.com/secured/rest/project-id")
+.baseUrl("https://api.apito.com/secured/rest/project-id")
 .addConverterFactory(JacksonConverterFactory.create())
 .build();
 ```

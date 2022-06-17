@@ -1,5 +1,5 @@
 export const PricingData2 = {
-    title: 'Self host Graphqli and Create Unlimited Projects',
+    title: 'Self host Apito and Create Unlimited Projects',
     slogan: 'Self Host Plan',
     plans : [
         {
@@ -7,7 +7,7 @@ export const PricingData2 = {
             title: 'Kubernetes Plan',
             description: 'Deploy on any Kubernetes Cluster',
             features: [
-                'Helm Chat Graphqli Deployment',
+                'Helm Chat Apito Deployment',
                 'Stateful DB Instance Setup',
                 'Ability to choose your own Database',
                 'Important Updates & Fixes',

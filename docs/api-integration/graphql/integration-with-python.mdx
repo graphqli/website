@@ -28,7 +28,7 @@ from gql import gql, Client
 from gql.transport.aiohttp import AIOHTTPTransport
 
 # Select your transport with a defined url endpoint
-transport = AIOHTTPTransport(url="https://api.graphqli.com/secured/graphql", headers={'Authorization': 'Bearer API_SECRET'})
+transport = AIOHTTPTransport(url="https://api.apito.com/secured/graphql", headers={'Authorization': 'Bearer API_SECRET'})
 
 # Create a GraphQL client using the defined transport
 client = Client(transport=transport, fetch_schema_from_transport=True)

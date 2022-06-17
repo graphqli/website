@@ -61,7 +61,7 @@ To download `schema.json`, you need to use the id_token from auth0 and run this 
 <ApiSecretNote />
 
 ```sh
-apollo schema:download --endpoint=https://api.graphqli.com/secured/graphql --header="Authorization: Bearer API_SECRET"
+apollo schema:download --endpoint=https://api.apito.com/secured/graphql --header="Authorization: Bearer API_SECRET"
 ```
 
 ### Build your target
@@ -156,7 +156,7 @@ import ApolloWebSocket
 
 class NetworkManager {
     static let shared = NetworkManager()
-    let graphEndpoint = "https://api.graphqli.com/secured/graphql"
+    let graphEndpoint = "https://api.apito.com/secured/graphql"
     var apolloClient : ApolloClient?
 
     private init (){

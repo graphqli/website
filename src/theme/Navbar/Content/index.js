@@ -67,7 +67,7 @@ export default function NavbarContent() {
                 <a className="button button--outline margin-left--md margin-right--sm" target="_blank" href='https://app.graphli.com'>
                     Login
                 </a>
-                <a className="button button--primary margin-right--md" target="_blank" href='https://app.graphqli.com'>
+                <a className="button button--primary margin-right--md" target="_blank" href='https://app.apito.io'>
                     Sign Up
                 </a>
             </div>

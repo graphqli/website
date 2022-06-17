@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer id="footer" sx={styles.section}>
       <div sx={styles.footerContent}>
-        <Logo />
+        {/*<Log o />*/}
 {/*        <nav sx={styles.nav}>
           {navbar.map((item, i) => (
             <Link key={i} href={item.url} target={item.outside ? "_blank" : null}>
@@ -18,7 +18,7 @@ const Footer = () => {
           ))}
         </nav>*/}
 {/*        <div sx={styles.copyright}>
-          Copyright {new Date().getFullYear()} By graphqli.com |{' '}
+          Copyright {new Date().getFullYear()} By apito.io |{' '}
           <Link href="/privacy-policy">
             <a href="/privacy-policy" sx={{ mx: '5px' }}>Privacy Policy</a>
           </Link>{' '}

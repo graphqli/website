@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://graphqli.com
+Host: https://apito.io
 
 # Sitemaps
-Sitemap: https://graphqli.com/sitemap.xml
+Sitemap: https://apito.io/sitemap.xml

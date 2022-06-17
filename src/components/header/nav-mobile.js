@@ -66,7 +66,7 @@ const NavbarMobile = ({ isOpen, isSticky }) => {
         </Link>
       </li>
       <li>
-        <Link href="https://app.graphqli.com">
+        <Link href="https://app.apito.io">
           <a target="_blank"> Login </a>
         </Link>
       </li>

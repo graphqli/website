@@ -1,6 +1,6 @@
 ---
 id: gatsby-cms-with-graphql
-title: Integrate Gatsby with Graphqli
+title: Integrate Gatsby with Apito
 sidebar_label: Gatsby
 ---
 
@@ -8,19 +8,19 @@ Gatsby is the fast and flexible framework that makes building websites with any 
 
 ## The best Headless CMS for Gatsby
 
-Graphqli is a powerful headless cms to maintain and manage your Gatsby static site. it can deliver your content with GraphQL.
+Apito is a powerful headless cms to maintain and manage your Gatsby static site. it can deliver your content with GraphQL.
 
 Gatsby automates code-splitting, image optimization, inlining critical styles, lazy-loading, and prefetching resources, and more to ensure your site is fast.
 You can read more about why you should use gatsby [here](https://www.gatsbyjs.com/why-gatsby/)
 
-## Graphqli with Gatsby benefits
+## Apito with Gatsby benefits
 
 Being a static site generator brings a lot of advantages: Performance, security, lower cost of scaling but also an excellent developer experience.
 
 Gatsby brings huge benefits to content creators and developers by helping to solve many of the challenges with the headless approach.
 
-Graphqli provides a perfect solution as a source for Gatsby’s static markup generation. Whether building a static site, or a more dynamic app/website
-Graphqli has you covered with its flexibility of content types, plugins, and customization.
+Apito provides a perfect solution as a source for Gatsby’s static markup generation. Whether building a static site, or a more dynamic app/website
+Apito has you covered with its flexibility of content types, plugins, and customization.
 
 
 ## Automate builds using Webhooks
@@ -49,8 +49,8 @@ Then we can use these environment variables via process.env and configure our pl
     {
       resolve: "gatsby-source-graphql",
       options: {
-        typeName: "Graphqli",
-        fieldName: "graphqli",
+        typeName: "Apito",
+        fieldName: "apito",
         url: "https://api.github.com/graphql",
         // HTTP headers
         headers: {
@@ -107,8 +107,8 @@ module.exports = {
     {
       resolve: "gatsby-source-graphql",
       options: {
-        typeName: "Graphqli",
-        fieldName: "graphqli",
+        typeName: "Apito",
+        fieldName: "apito",
         url: "https://api.apito.io/secured/graphql",
         headers: {
           // Learn about environment variables: https://gatsby.dev/env-vars
@@ -125,8 +125,8 @@ module.exports = {
     {
       resolve: "gatsby-source-graphql",
       options: {
-        typeName: "Graphqli",
-        fieldName: "graphqli",
+        typeName: "Apito",
+        fieldName: "apito",
         url: "https://api.apito.io/secured/graphql",
         headers: {
           // Learn about environment variables: https://gatsby.dev/env-vars
@@ -185,7 +185,7 @@ module.exports = {
       resolve: "gatsby-source-graphql",
       options: {
         typeName: "Graphqli",
-        fieldName: "graphqli",
+        fieldName: "apito",
         url: "https://api.apito.io/secured/graphql",
         headers: {
           // Learn about environment variables: https://gatsby.dev/env-vars
@@ -216,7 +216,7 @@ module.exports = {
         // Arbitrary name for the remote schema Query type
         typeName: "Graphqli",
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "graphqli",
+        fieldName: "apito",
         // Url to query from
         url: "https://api.apito.io/secured/graphql",
         headers: {
@@ -261,7 +261,7 @@ module.exports = {
       resolve: "gatsby-source-graphql",
       options: {
         typeName: "Graphqli",
-        fieldName: "graphqli",
+        fieldName: "apito",
         url: "https://api.apito.io/secured/graphql",
         batch: true,
       },
@@ -283,7 +283,7 @@ module.exports = {
       resolve: "gatsby-source-graphql",
       options: {
         typeName: "Graphqli",
-        fieldName: "graphqli",
+        fieldName: "apito",
         url: "https://api.apito.io/secured/graphql",
         batch: true,
         // See https://github.com/graphql/dataloader#new-dataloaderbatchloadfn--options

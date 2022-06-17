@@ -190,7 +190,7 @@ export default function Home() {
                         <div className="container">
                             <h2>Framework Integration Guide</h2>
                             <small>
-                                Integrate Graphqli with Variety of Languages & Frameworks
+                                Integrate Apito with Variety of Languages & Frameworks
                             </small>
                             <div style={{height: '50px'}}></div>
                             <div className="row">

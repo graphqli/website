@@ -1,6 +1,6 @@
 ---
 sidebar_label: Ruby
-title: Graphqli REST API Integration with Ruby Project
+title: Apito REST API Integration with Ruby Project
 ---
 <head>
     <meta property="og:type" content="article" />
@@ -17,7 +17,7 @@ require 'uri'
 require 'net/http'
 require 'openssl'
 
-url = URI("https://api.graphqli.com/secured/rest/project")
+url = URI("https://api.apito.com/secured/rest/project")
 
 http = Net::HTTP.new(url.host, url.port)
 http.use_ssl = true

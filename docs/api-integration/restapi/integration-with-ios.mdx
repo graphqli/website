@@ -1,6 +1,6 @@
 ---
 sidebar_label: iOS
-title: Graphqli REST API Integration with iOS
+title: Apito REST API Integration with iOS
 ---
 <head>
     <meta property="og:type" content="article" />
@@ -22,7 +22,7 @@ let headers = [
   "authorization": "Bearer API_SECRET"
 ]
 
-let request = NSMutableURLRequest(url: NSURL(string: "https://api.graphqli.com/secured/rest/project-id")! as URL,
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.apito.com/secured/rest/project-id")! as URL,
                                         cachePolicy: .useProtocolCachePolicy,
                                     timeoutInterval: 10.0)
 request.httpMethod = "GET"

@@ -1,6 +1,6 @@
 ---
 sidebar_label: Java
-title: Graphqli REST API Integration with Java
+title: Apito REST API Integration with Java
 ---
 <head>
     <meta property="og:type" content="article" />
@@ -15,7 +15,7 @@ Unirest is a lightweight HTTP client library from Mashape. Along with Java, it's
 <ApiSecretNote />
 
 ```java title="client.java"
-HttpResponse<String> response = Unirest.get("https://api.graphqli.com/secured/rest/project-id")
+HttpResponse<String> response = Unirest.get("https://api.apito.com/secured/rest/project-id")
   .header("content-type", "application/json")
   .header("authorization", "Bearer API_SECRET")
   .asString();

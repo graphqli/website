@@ -31,10 +31,10 @@ const sidebars = {
         'build-api-quick-start-guide',
         {
             type: 'category',
-            label: 'Graphqli Console Howto',
+            label: 'Apito Console Howto',
             link: {
                 type: 'generated-index',
-                description: "Learn how to build content api in both graphql and rest by using graphqli console",
+                description: "Learn how to build content api in both graphql and rest by using apito console",
                 keywords: ['guides', 'how-to', 'documentation'],
                 image: '/img/docusaurus.png',
             },
@@ -182,12 +182,13 @@ const sidebars = {
              }
            ],
          }*/
+        'using-apito-as-backend-as-service',
         {
             type: 'category',
-            label: 'Extending Graphqli',
+            label: 'Extending Apito',
             link: {
                 type: 'generated-index',
-                description: "You can extend Graphqli with Various different plugins available in Settings. You can even extend graphqli api through cloud functions, add auth support and many more.",
+                description: "You can extend Apito with Various different plugins available in Settings. You can even extend apito api through cloud functions, add auth support and many more.",
                 keywords: ['guides', 'how-to'],
                 image: '/img/docusaurus.png',
             },
@@ -197,7 +198,7 @@ const sidebars = {
                     label: 'Adding Authentication Support',
                     link: {
                         type: 'generated-index',
-                        description: "If you app contents are protected then you can extend Graphqli to be able to add login and signup functionality for your app users.",
+                        description: "If you app contents are protected then you can extend Apito to be able to add login and signup functionality for your app users.",
                         keywords: ['guides', 'how-to', 'auth', 'login api', 'signup api'],
                         image: '/img/docusaurus.png',
                     },
@@ -221,7 +222,7 @@ const sidebars = {
                         'extensions/logic/configuring-aws',
                         'extensions/logic/writing-cloud-functions',
                         'extensions/logic/enable-lambda-extension',
-                        'extensions/logic/create-graphqli-function',
+                        'extensions/logic/create-apito-function',
                         'extensions/logic/create-lambda-function',
                         'extensions/logic/connecting-function',
                         'extensions/logic/calling-function'

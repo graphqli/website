@@ -6,7 +6,7 @@ import { HomePageData } from "../data/home-page";
 import ExampleQueries from "./example-queries";
 import React from "react";
 
-const HeroBanner = ({ data }) => {
+const HeroHeader = ({ data }) => {
   return (
     <section id="home" sx={styles.section}>
       <Container>
@@ -20,22 +20,13 @@ const HeroBanner = ({ data }) => {
                 </a>
             )}
           </Box>
-           <Box as="figure">
-            <Image
-              src={data.image}
-              width={'auto'}
-              height={740}
-              alt={"Apito Console"}
-              title={"Apito Console"}
-            />
-          </Box>
         </Grid>
       </Container>
     </section>
   );
 };
 
-export default HeroBanner;
+export default HeroHeader;
 
 const styles = {
   section: {

@@ -39,6 +39,13 @@ export const HomePageData = {
       link : '/features'
     }
   },
+  self_host: {
+    title: 'Build on our Cloud or Deploy on your Own',
+    image:
+        "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
+    description:
+        "Self host Graphqli on any Cloud provider, Kubernetes Cluster using Docker or even on your Local Machine"
+  },
   featurePage: {
     title: 'Modern & Extensible Headless CMS',
     image:

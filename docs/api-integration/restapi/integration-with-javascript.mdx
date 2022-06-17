@@ -1,6 +1,6 @@
 ---
 sidebar_label: Javascript
-title: Graphqli REST API Integration with Javascript Project
+title: Apito REST API Integration with Javascript Project
 ---
 <head>
     <meta property="og:type" content="article" />
@@ -18,7 +18,7 @@ enables client-side protection against XSRF. It also has the ability to cancel r
 
 ```javascript
 const token = 'apito-api-secret';
-axios.get('https://api.graphqli.com/secured/rest/project', {
+axios.get('https://api.apito.com/secured/rest/project', {
   headers: {
     'Authorization': `Bearer ${token}`
   }
@@ -38,7 +38,7 @@ It also provides a global fetch() method that provides an easy, logical way to f
 
 ```javascript
 const token = 'apito-api-secret';
-fetch('https://api.graphqli.com/secured/rest/project', {
+fetch('https://api.apito.com/secured/rest/project', {
   headers: {
     Authorization: `Bearer ${token}`
   }

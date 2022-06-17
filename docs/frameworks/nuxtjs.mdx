@@ -1,6 +1,6 @@
 ---
 id: nuxtjs-integration-with-graphql
-title: Integrate NuxtJS with Graphqli
+title: Integrate NuxtJS with Apito
 sidebar_label: NuxtJS
 
 image: 'https://nuxtjs.org/preview.png'
@@ -16,8 +16,8 @@ NuxtJS is known as The Intuitive Vue Framework. Nuxt is shipped with plenty of f
 
 - Clone this repo:
 ```bash
-git clone https://github.com/graphqli/nuxtjs-graphqli-todo-app.git
-cd nuxtjs-graphqli-todo-app
+git clone https://github.com/apito/nuxtjs-apito-todo-app.git
+cd nuxtjs-apito-todo-app
   ```
 
 - Install npm modules:
@@ -31,7 +31,7 @@ yarn install
   export default function(context){
     return {
           httpLinkOptions: {
-              uri: 'https://api.graphqli.com/secured/graphql',
+              uri: 'https://api.apito.com/secured/graphql',
               credentials: 'same-origin'
           },
           cache: new InMemoryCache()

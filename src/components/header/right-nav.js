@@ -5,10 +5,10 @@ import { jsx, Flex, Button } from "theme-ui";
 const RightNav = () => {
   return (
     <Flex sx={styles.nav}>
-      <a href="https://app.graphqli.com" rel="noreferrer" target="_blank">
+      <a href="https://app.apito.io" rel="noreferrer" target="_blank">
         <Button variant="outlinedPrimary"> Login </Button>
       </a>
-      <a href="https://app.graphqli.com" rel="noreferrer" target="_blank">
+      <a href="https://app.apito.io" rel="noreferrer" target="_blank">
         <Button variant="primary" sx={{ ml: [23] }}>
           Sign Up
         </Button>
