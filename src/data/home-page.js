@@ -53,6 +53,61 @@ export const HomePageData = {
     description:
         "Explore the powerful CMS with Content Modeling Tools with Team Collaborations, Content Revision, CDN, Webhooks & Much more",
   },
+  selfHost: {
+    slogan: "None",
+    title: "None",
+    data: [
+      {
+        cover: {
+          url: "https://cdn.apito.io/media/apito_website/FX9FK3SLJ5_database_model.png",
+        },
+        description: {
+          markdown:
+              "What makes graphqli very unique is the ability to self host  graphqli headless cms to your own cluster or on your favourite cloud infrastructure within seconds.\n" +
+              "\n" +
+              "Host unlimited projects and ability to choose different database per project !!",
+        },
+        textAlign: 'left',
+        header: "SELF HOST",
+        icon: {
+          url: "https://cdn.apito.io/media/apito_website/TX9PNRYAVX_webhooks.svg",
+        },
+        link: "/docs/model/database-design",
+        link_text: "See The Pricing",
+        title: "Content Modeling tools",
+      },
+      /*            {
+                "cover": {
+                    "url": "https://cdn.apito.io/media/apito_website/homepagev2/2CIRIBQ6GB_apito_console.png"
+                },
+                "description": {
+                    "markdown": "Run apito server in docker and build your application locally"
+                },
+                "header": "DOCKER READY",
+                "icon": {
+                    "url": "https://cdn.apito.io/media/apito_website/TX9PNRYAVX_webhooks.svg"
+                },
+                "link": "https://docs.apito.io/quick-start",
+                "title": "Develop your API offline in your localhost"
+            },*/
+      {
+        cover: {
+          url: "https://cdn.apito.io/media/apito_website/homepagev2/TM3F0KHCMN_dual_engine_api.png",
+        },
+        description: {
+          markdown:
+              "Instantly connectable GraphQL & REST API with Complex Filter",
+        },
+        header: "INSTANT API",
+        icon: {
+          url: "https://cdn.apito.io/media/apito_website/8XRYHC4LBQ_auth_module.svg",
+        },
+        link: "/docs/build-api-quick-start-guide",
+        link_text: "See In Action",
+        title: "Build API in both GraphQL & REST API",
+      },
+    ],
+  },
   features1: {
     slogan: "None",
     title: "None",

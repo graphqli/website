@@ -18,7 +18,7 @@ const Features = ({ features, hideSection }) => {
         {features?.data?.map((feature, i) => (
           i % 2 === 0 ?
             <div key={i} sx={styles.grid}>
-              <div sx={styles.heading}>
+              <div sx={styles.heading} style={ feature.textAlign && { textAlign : feature.textAlign }}>
                 <Text as='span' className='slogan'>{feature?.header}</Text>
                 <Heading as='h2'>{feature?.title}</Heading>
                 <Text as='p'>{feature?.description?.markdown}</Text>

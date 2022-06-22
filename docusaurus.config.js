@@ -102,7 +102,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        to: '/self-host-apito',
+                        to: '/backend-as-service',
                         label: 'BaaS',
                         position: 'right',
                     },
