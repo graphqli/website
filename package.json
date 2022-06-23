@@ -30,6 +30,7 @@
     "react-scroll": "^1.8.6",
     "react-stickynode": "^4.0.0",
     "react-syntax-highlighter": "^15.5.0",
+    "swiper": "^8.2.4",
     "theme-ui": "^0.13.1",
     "use-media": "^1.4.0"
   },

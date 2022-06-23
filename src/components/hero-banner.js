@@ -15,15 +15,15 @@ const HeroBanner = ({ data }) => {
             <Heading as="h1">{data?.title}</Heading>
             <p>{data?.description}</p>
             {data?.button && (
-                <a href={data?.button?.link}>
-                  <Button>{data?.button?.label}</Button>
-                </a>
+              <a href={data?.button?.link}>
+                <Button>{data?.button?.label}</Button>
+              </a>
             )}
           </Box>
-           <Box as="figure">
+          <Box as="figure">
             <Image
               src={data.image}
-              width={'auto'}
+              width={"auto"}
               height={740}
               alt={"Apito Console"}
               title={"Apito Console"}

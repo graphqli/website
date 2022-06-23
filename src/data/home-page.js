@@ -6,7 +6,7 @@ import couchDB from "../icons/png/logo_couchDB.png";
 import dynamoDB from "../icons/png/logo_dynamoDB.png";
 import firestore from "../icons/png/logo_firestore.png";
 import gatsby from "../icons/png/logo_gatsby.png";
-import hugo from "../icons/png/logo_hugo.png";
+// import hugo from "../icons/png/logo_hugo.png";
 import mariaDB from "../icons/png/logo_mariaDB.png";
 import mongoDB from "../icons/png/logo_mongoDB.png";
 import mySQL from "../icons/png/logo_mySQL.png";
@@ -15,9 +15,9 @@ import nuxt from "../icons/png/logo_nuxt.png";
 import oracle from "../icons/png/logo_oracle.png";
 import postgresSQL from "../icons/png/logo_postgresSQL.png";
 import reactjs from "../icons/png/logo_react.png";
-import sapper from "../icons/png/logo_sapper.png";
+// import sapper from "../icons/png/logo_sapper.png";
 import SQLServer from "../icons/png/logo_SQLServer.png";
-import svelte from "../icons/png/logo_svelte.png";
+// import svelte from "../icons/png/logo_svelte.png";
 import vue from "../icons/png/logo_vue.png";
 
 export const HomePageData = {
@@ -29,29 +29,29 @@ export const HomePageData = {
       "api, graphql, rest api, cms headless, cms for website, api integration, free cms, free api, api development, free headless cms, develop an api, api roles, auth api, graphql explorer, multilingual cms, api in cloud",
   },
   header: {
-    title: 'Modern & Extensible Headless CMS',
+    title: "Modern & Extensible Headless CMS",
     image:
       "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
     description:
       "Build Instant RESTful & Graphql API for Your Data with Content Revision, CDN, Webhooks, Team Collaborations, Cloud Functions & Much more",
-    button : {
-      label : 'Explore Full Features',
-      link : '/features'
-    }
+    button: {
+      label: "Explore Full Features",
+      link: "/features",
+    },
   },
   self_host: {
-    title: 'Build on our Cloud or Deploy on your Own',
+    title: "Build on our Cloud or Deploy on your Own",
     image:
-        "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
+      "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
     description:
-        "Self host Graphqli on any Cloud provider, Kubernetes Cluster using Docker or even on your Local Machine"
+      "Self host Graphqli on any Cloud provider, Kubernetes Cluster using Docker or even on your Local Machine",
   },
   featurePage: {
-    title: 'Modern & Extensible Headless CMS',
+    title: "Modern & Extensible Headless CMS",
     image:
-        "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
+      "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
     description:
-        "Explore the powerful CMS with Content Modeling Tools with Team Collaborations, Content Revision, CDN, Webhooks & Much more",
+      "Explore the powerful CMS with Content Modeling Tools with Team Collaborations, Content Revision, CDN, Webhooks & Much more",
   },
   selfHost: {
     slogan: "None",
@@ -63,11 +63,11 @@ export const HomePageData = {
         },
         description: {
           markdown:
-              "What makes graphqli very unique is the ability to self host  graphqli headless cms to your own cluster or on your favourite cloud infrastructure within seconds.\n" +
-              "\n" +
-              "Host unlimited projects and ability to choose different database per project !!",
+            "What makes graphqli very unique is the ability to self host  graphqli headless cms to your own cluster or on your favourite cloud infrastructure within seconds.\n" +
+            "\n" +
+            "Host unlimited projects and ability to choose different database per project !!",
         },
-        textAlign: 'left',
+        textAlign: "left",
         header: "SELF HOST",
         icon: {
           url: "https://cdn.apito.io/media/apito_website/TX9PNRYAVX_webhooks.svg",
@@ -96,7 +96,7 @@ export const HomePageData = {
         },
         description: {
           markdown:
-              "Instantly connectable GraphQL & REST API with Complex Filter",
+            "Instantly connectable GraphQL & REST API with Complex Filter",
         },
         header: "INSTANT API",
         icon: {
@@ -220,7 +220,7 @@ export const HomePageData = {
       {
         id: 1,
         title: "Content Get",
-        description: 'Get Website Homepage Data',
+        description: "Get Website Homepage Data",
         codes: {
           rest: `curl https://api.apito.io/secured/rest/homepage`,
           graphql: `query GetHomePage {
@@ -259,7 +259,8 @@ export const HomePageData = {
       {
         id: 2,
         title: "Filtering and Sorting",
-        description: "Query : Filtering Products by Ratting and Sorting by Price",
+        description:
+          "Query : Filtering Products by Ratting and Sorting by Price",
         codes: {
           rest: `curl https://api.apito.io/secured/rest/ecom/products?rating:gte=4&sort=-price`,
           graphql: `query FilterProductByPriceAndRating {
@@ -333,7 +334,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
 }`,
         },
       },
-/*      {
+      /*      {
         id: 4,
         title: "Geo Location Search",
         codes: {
@@ -387,7 +388,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
 }`,
         },
       },
-/*      {
+      /*      {
         id: 6,
         title: "Project User Login",
         restMethod: "post",
@@ -403,7 +404,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
 }`,
         },
       },*/
-/*      {
+      /*      {
         id: 7,
         title: "User Registration",
         restMethod: "post",
@@ -420,7 +421,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
 }`,
         },
       },*/
-/*      {
+      /*      {
         id: 8,
         title: "Custom Function Calling",
         restMethod: "post",
@@ -694,7 +695,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           title: "Gatsby",
           description:
             "Gatsby is a blazing fast modern site generator for React.",
-          link: "/docs/frameworks/gatsby-cms-with-graphql"
+          link: "/docs/frameworks/gatsby-cms-with-graphql",
         },
       },
       {
@@ -704,7 +705,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
           title: "Vue",
           description:
             "Vue.js is an open-source Model-View-Viewmodel Javascript framework.",
-          link: "/docs/frameworks/vuejs-integration-with-graphql"
+          link: "/docs/frameworks/vuejs-integration-with-graphql",
         },
       },
       {
@@ -747,7 +748,7 @@ curl https://api.apito.io/secured/rest/ecom/category?name:contains="shirt"`,
             "Angular is a platform for building mobile and desktop web applications.",
         },
       },
-/*      {
+      /*      {
         id: 7,
         data: {
           logo: svelte,
