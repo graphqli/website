@@ -4,7 +4,7 @@ import StickyHeader from "../components/header/sticky-header";
 import {ThemeProvider} from "theme-ui";
 import {themeSettings} from "../theme/theme-settings";
 import HeroBanner from "../components/hero-banner";
-import {HomePageData} from "../data/home-page";
+import {HomePageData} from "../data/home";
 import Seo from "../components/seo";
 import SDKintegration from "../components/sdk-integration";
 import Communications from "../components/support";
@@ -15,6 +15,8 @@ import Layout from '@theme/Layout';
 import ExampleQueries from "../components/example-queries";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Databases from "../components/databases";
+import {CommonData} from "../data/common";
+import {FooterData} from "../data/footer";
 
 function Hello() {
 
@@ -27,19 +29,20 @@ function Hello() {
             description={`${siteConfig.tagline}`}>
             <ThemeProvider theme={themeSettings}>
                 {/*overwrites title and include SEO*/}
-                <Seo data={HomePageData.seo}/>
+                <Seo data={CommonData.seo}/>
 
                 {/*                <StickyHeader/>*/}
                 <HeroBanner data={HomePageData.header}/>
-                <ExampleQueries data={HomePageData.exampleQueries}/>
                 <Features features={HomePageData.features1} hideSection={true}/>
-                <Databases data={HomePageData.databases}/>
+               {/* <ExampleQueries data={HomePageData.exampleQueries}/>*/}
+
+
                 {/*<Projects data={HomePageData.projects} />*/}
                 <Features features={HomePageData.features2} hideSection={true}/>
                 <Features features={HomePageData.features3} hideSection={true}/>
-                <SDKintegration data={HomePageData.sdk}/>
 
-                <Communications data={HomePageData.communications}/>
+                <Databases data={HomePageData.databases}/>
+
                 <Footer/>
             </ThemeProvider>
         </Layout>

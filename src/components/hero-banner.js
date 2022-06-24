@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Container, Grid, Box, Heading, Button, Image } from "theme-ui";
 import Markdown from "./markdown";
-import { HomePageData } from "../data/home-page";
+import { HomePageData } from "../data/home";
 import ExampleQueries from "./example-queries";
 import React from "react";
 
@@ -12,23 +12,27 @@ const HeroBanner = ({ data }) => {
       <Container>
         <Grid sx={styles.grid}>
           <Box sx={styles.heroContent}>
-            <Heading as="h1">{data?.title}</Heading>
-            <p>{data?.description}</p>
+            <h1>
+              <Markdown source={data?.description} >{data?.title}</Markdown>
+            </h1>
+            <Markdown source={data?.description} />
             {data?.button && (
                 <a href={data?.button?.link}>
                   <Button>{data?.button?.label}</Button>
                 </a>
             )}
           </Box>
-           <Box as="figure">
-            <Image
-              src={data.image}
-              width={'auto'}
-              height={740}
-              alt={"Apito Console"}
-              title={"Apito Console"}
-            />
-          </Box>
+          {
+            data?.image && <Box as="figure">
+              <Image
+                  src={data.image}
+                  width={'auto'}
+                  height={740}
+                  alt={"Apito Console"}
+                  title={"Apito Console"}
+              />
+            </Box>
+          }
         </Grid>
       </Container>
     </section>
@@ -52,11 +56,15 @@ const styles = {
     mx: "auto",
     textAlign: "center",
     h1: {
-      fontSize: [28, null, null, 48],
-      lineHeight: 1.35,
+      maxWidth: '1024px',
+      p :{
+        fontSize: [28, null, null, 48],
+        lineHeight: 1.35,
+      }
     },
     span: {
       color: "primary",
+
     },
     p: {
       fontSize: [16, null, null, 20],

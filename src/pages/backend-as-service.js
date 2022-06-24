@@ -4,7 +4,7 @@ import StickyHeader from "../components/header/sticky-header";
 import {ThemeProvider} from "theme-ui";
 import {themeSettings} from "../theme/theme-settings";
 import HeroBanner from "../components/hero-banner";
-import {HomePageData} from "../data/home-page";
+import {HomePageData} from "../data/home";
 import Seo from "../components/seo";
 import SDKintegration from "../components/sdk-integration";
 import Communications from "../components/support";
@@ -15,7 +15,9 @@ import Layout from '@theme/Layout';
 import ExampleQueries from "../components/example-queries";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Databases from "../components/databases";
-import HeroHeader from "../components/hero-header";
+import {CommonData} from "../data/common";
+import {FooterData} from "../data/footer";
+import {BackendPageData} from "../data/backend-as-service";
 
 function Hello() {
 
@@ -28,19 +30,21 @@ function Hello() {
             description={`${siteConfig.tagline}`}>
             <ThemeProvider theme={themeSettings}>
                 {/*overwrites title and include SEO*/}
-                <Seo data={HomePageData.seo}/>
+                <Seo data={CommonData.seo}/>
 
                 {/*                <StickyHeader/>*/}
-                <HeroHeader data={HomePageData.self_host}/>
-                {/*<ExampleQueries data={HomePageData.exampleQueries}/>*/}
-                <Features features={HomePageData.selfHost} hideSection={true}/>
-                <Databases data={HomePageData.databases}/>
-                {/*<Projects data={HomePageData.projects} />*/}
-                <Features features={HomePageData.features2} hideSection={true}/>
-                <Features features={HomePageData.features3} hideSection={true}/>
-                <SDKintegration data={HomePageData.sdk}/>
+                <HeroBanner data={BackendPageData.header}/>
+                <ExampleQueries data={BackendPageData.exampleQueries}/>
+                <Features features={BackendPageData.features1} hideSection={true}/>
 
-                <Communications data={HomePageData.communications}/>
+
+
+                {/*<Projects data={HomePageData.projects} />*/}
+                <Features features={BackendPageData.features2} hideSection={true}/>
+                <Features features={BackendPageData.features3} hideSection={true}/>
+
+                <Databases data={BackendPageData.databases}/>
+
                 <Footer/>
             </ThemeProvider>
         </Layout>

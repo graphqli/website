@@ -4,6 +4,7 @@
 import React from "react";
 import {jsx, Button, Container, Flex, Heading, Image, Text} from 'theme-ui';
 import SectionHeading from "./section-heading";
+import Markdown from "./markdown";
 
 const Features = ({ features, hideSection }) => {
   return (
@@ -21,7 +22,11 @@ const Features = ({ features, hideSection }) => {
               <div sx={styles.heading} style={ feature.textAlign && { textAlign : feature.textAlign }}>
                 <Text as='span' className='slogan'>{feature?.header}</Text>
                 <Heading as='h2'>{feature?.title}</Heading>
-                <Text as='p'>{feature?.description?.markdown}</Text>
+                {
+                  feature?.description?.isMarkdown ?
+                      <Markdown source={feature?.description?.markdown} /> :
+                      <Text as='p'>{feature?.description?.markdown}</Text>
+                }
                 {feature.link && (
                     <a href={feature.link} rel="noreferrer" target="_blank">
                       <Button variant="primary">
@@ -40,7 +45,11 @@ const Features = ({ features, hideSection }) => {
               <div sx={styles.heading}>
                 <Text as='span' className='slogan'>{feature?.header}</Text>
                 <Heading as='h2'>{feature?.title}</Heading>
-                <Text as='p'>{feature?.description?.markdown}</Text>
+                {
+                  feature?.description?.isMarkdown ?
+                      <Markdown source={feature?.description?.markdown} /> :
+                      <Text as='p'>{feature?.description?.markdown}</Text>
+                }
                 {feature.link && (
                     <a href={feature.link} rel="noreferrer" target="_blank">
                       <Button variant="primary">

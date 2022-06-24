@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, Container, Grid, Box, Heading, Button, Image } from "theme-ui";
 import Markdown from "./markdown";
-import { HomePageData } from "../data/home-page";
+import { HomePageData } from "../data/home";
 import ExampleQueries from "./example-queries";
 import React from "react";
 

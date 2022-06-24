@@ -3,7 +3,7 @@
 import {jsx, Container, ThemeProvider} from 'theme-ui';
 import React, {Fragment} from 'react';
 import Seo from "../components/seo";
-import {HomePageData} from "../data/home-page";
+import {HomePageData} from "../data/home";
 import StickyHeader from "../components/header/sticky-header";
 import SectionHeading from "../components/section-heading";
 import SDKintegration from "../components/sdk-integration";

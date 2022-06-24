@@ -74,53 +74,40 @@ const config = {
                     height: 50
                 },
                 items: [
-                    /*          {
-                                to: 'docs/',
-                                activeBasePath: 'docs/',
-                                label: 'Index',
-                                position: 'left',
-                              },
-                              {
-                                to: 'docs/build-api-quick-start-guide',
-                                activeBasePath: 'docs/build-api-quick-start-guide',
-                                label: 'Getting Started',
-                                position: 'left',
-                              },*/
+                    {
+                        to: '/docs/build-api-quick-start-guide',
+                        label: 'Docs',
+                        position: 'left',
+                    },
+                    {
+                        to: 'blog',
+                        label: 'Blog',
+                        position: 'left'
+                    },
+                    {
+                        to: '/pricing',
+                        label: 'Pricing',
+                        position: 'left',
+                    },
                     {
                         to: '/',
                         label: 'Home',
                         position: 'right',
                     },
                     {
-                        to: '/features',
-                        label: 'Features',
+                        to: '/backend-as-service',
+                        label: 'Backend-as-Service',
+                        position: 'right',
+                    },
+                    {
+                        to: '/headless-cms',
+                        label: 'Headless CMS',
                         position: 'right',
                     },
                     {
                         to: '/self-host-apito',
                         label: 'Self Host',
                         position: 'right',
-                    },
-                    {
-                        to: '/backend-as-service',
-                        label: 'BaaS',
-                        position: 'right',
-                    },
-
-                    {
-                        to: '/pricing',
-                        label: 'Pricing',
-                        position: 'right',
-                    },
-                    {
-                        to: '/docs/build-api-quick-start-guide',
-                        label: 'Docs',
-                        position: 'right',
-                    },
-                    {
-                        to: 'blog',
-                        label: 'Blog',
-                        position: 'right'
                     },
                     {
                         to: '/faq',
