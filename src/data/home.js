@@ -32,6 +32,13 @@ export const HomePageData = {
             link: '/headless-cms'
         }
     },
+    featurePage: {
+        title: "Modern & Extensible Headless CMS",
+        image:
+            "https://cdn.apito.io/media/apito_website/Y97T0H5XM7_apito_console_full_picture.png",
+        description:
+            "Explore the powerful CMS with Content Modeling Tools with Team Collaborations, Content Revision, CDN, Webhooks & Much more",
+    },
     features1: {
         slogan: "None",
         title: "None",

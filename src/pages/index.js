@@ -15,8 +15,13 @@ import Layout from '@theme/Layout';
 import ExampleQueries from "../components/example-queries";
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Databases from "../components/databases";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 import {CommonData} from "../data/common";
 import {FooterData} from "../data/footer";
+import FeatureBanner from "../components/feature-banner";
 
 function Hello() {
 
@@ -32,6 +37,7 @@ function Hello() {
                 <Seo data={CommonData.seo}/>
 
                 {/*                <StickyHeader/>*/}
+                <FeatureBanner data={HomePageData.featurePage} />
                 <HeroBanner data={HomePageData.header}/>
                 <Features features={HomePageData.features1} hideSection={true}/>
                {/* <ExampleQueries data={HomePageData.exampleQueries}/>*/}
